@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran Academy - Online Quran Learning & Islamic Studies</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="arabic-logo">القرآن</span> Quran<span>Academy</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#features">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary nav-btn">Get Free Trial</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge">Online Quran & Arabic Classes</span>
+        <h1>Learn Quran Online with Certified Native Tutors</h1>
+        <p>Master Quran Recitation, Tajweed, Hifz, and Arabic Language from the comfort of your home with 1-on-1 personalized live classes for kids & adults.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Book Free Trial Class</a>
+          <a href="#courses" class="btn btn-outline">Explore Courses</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>5,000+</h3>
+            <p>Students Enrolled</p>
+          </div>
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Certified Tutors</p>
+          </div>
+          <div class="stat-item">
+            <h3>99%</h3>
+            <p>Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-card">
+        <div class="arabic-calligraphy">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        <div class="verse-box">
+          <p class="verse-arabic">"خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ"</p>
+          <p class="verse-translation">"The best among you are those who learn the Quran and teach it." (Sahih Al-Bukhari)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>About Quran Academy</h2>
+        <p>Dedicated to providing authentic, accessible, and comprehensive Quranic education worldwide.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="icon-box">📖</div>
+          <h3>Interactive 1-on-1 Live Sessions</h3>
+          <p>Personalized attention with tailored learning speed for students of all age groups and skill levels.</p>
+        </div>
+        <div class="about-card">
+          <div class="icon-box">🎓</div>
+          <h3>Al-Azhar Certified Tutors</h3>
+          <p>Learn from qualified male and female teachers with Ijazah from renowned Islamic Universities.</p>
+        </div>
+        <div class="about-card">
+          <div class="icon-box">🕒</div>
+          <h3>Flexible Schedules 24/7</h3>
+          <p>Choose your preferred timings that fit perfectly into your busy school or work routine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Our Popular Courses</h2>
+        <p>Structured programs designed for beginners, intermediate, and advanced learners.</p>
+      </div>
+      <div class="courses-grid" id="coursesGrid">
+        <!-- Dynamically loaded or fallback static course cards -->
+        <div class="course-card">
+          <div class="course-badge">Beginner</div>
+          <h3>Noorani Qaida & Basic Quran</h3>
+          <p>Learn Arabic alphabets, correct pronunciation, and basic reading rules for kids and adult beginners.</p>
+          <button class="btn btn-primary btn-sm enroll-btn" data-course="Noorani Qaida & Basic Quran">Enroll Now</button>
+        </div>
+        <div class="course-card">
+          <div class="course-badge">All Levels</div>
+          <h3>Quran Recitation with Tajweed</h3>
+          <p>Master Tajweed rules to recite the Quran with accuracy, beautiful melody, and proper rhythm.</p>
+          <button class="btn btn-primary btn-sm enroll-btn" data-course="Quran Recitation with Tajweed">Enroll Now</button>
+        </div>
+        <div class="course-card">
+          <div class="course-badge">Intermediate</div>
+          <h3>Quran Memorization (Hifz)</h3>
+          <p>Systematic Quran memorization program with daily revision techniques guided by experienced Hafiz tutors.</p>
+          <button class="btn btn-primary btn-sm enroll-btn" data-course="Quran Memorization (Hifz)">Enroll Now</button>
+        </div>
+        <div class="course-card">
+          <div class="course-badge">Advanced</div>
+          <h3>Islamic Studies & Quranic Arabic</h3>
+          <p>Understand Quranic grammar, Tafseer, Hadith, Fiqh, and daily Dua'as to enrich your spiritual life.</p>
+          <button class="btn btn-primary btn-sm enroll-btn" data-course="Islamic Studies & Quranic Arabic">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Why Choose Quran Academy?</h2>
+        <p>We provide an ideal online learning environment for your family.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">👩‍🏫</div>
+          <h4>Female Tutors Available</h4>
+          <p>Dedicated male and female instructors available for sisters and female students.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📊</div>
+          <h4>Monthly Progress Reports</h4>
+          <p>Parents receive detailed monthly feedback on performance, attendance, and fluency.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💰</div>
+          <h4>Affordable Monthly Packages</h4>
+          <p>High quality education with flexible subscription options and family discounts.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎁</div>
+          <h4>Free 3-Day Trial</h4>
+          <p>Experience our teaching methodology with no commitment before enrolling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Get in Touch with Us</h2>
+          <p>Have questions or want to register for a <strong>Free Trial Class</strong>? Fill out the form and our team will get back to you within 24 hours.</p>
+          <div class="info-details">
+            <p><strong>📧 Email:</strong> support@quranacademy.com</p>
+            <p><strong>📞 Phone / WhatsApp:</strong> +1 (800) 123-4567</p>
+            <p><strong>🌐 Working Hours:</strong> 24/7 Available Worldwide</p>
+          </div>
+          <div class="sheets-badge">
+            ⚡ Powered by Instant Google Sheets Data Synchronization
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <h3>Register for Free Trial</h3>
+            <div id="formAlert" class="alert hidden"></div>
+
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+            </div>
+
+            <div class="form-group">
+              <label for="course">Select Course *</label>
+              <select id="course" name="course" required>
+                <option value="">-- Choose Course --</option>
+                <option value="Noorani Qaida & Basic Quran">Noorani Qaida & Basic Quran</option>
+                <option value="Quran Recitation with Tajweed">Quran Recitation with Tajweed</option>
+                <option value="Quran Memorization (Hifz)">Quran Memorization (Hifz)</option>
+                <option value="Islamic Studies & Quranic Arabic">Islamic Studies & Quranic Arabic</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Preferred Timings</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about student age or preferred timings..."></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+              <span class="btn-text">Submit Request</span>
+              <span class="spinner hidden"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Quran Academy. All rights reserved. Designed & Powered with Express Backend & Google Sheets.</p>
+    </div>
+  </footer>
+
+  <!-- JS script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

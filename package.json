@@ -1,0 +1,16 @@
+{
+  "name": "quran-academy-backend",
+  "version": "1.0.0",
+  "description": "Quran Academy Web Application with Express Backend and Google Sheets Integration",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/server.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
