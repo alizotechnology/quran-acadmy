@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "trust-blue": "#1E5AA8",
+          "border-gilded": "#E6D7A8",
+          "surface-subtle": "#F4F6F3",
+          "on-error": "#ffffff",
+          "border-hairline": "#E2E8E4",
+          "surface-bright": "#f3fcf3",
+          "on-primary": "#ffffff",
+          "on-background": "#151d19",
+          "on-tertiary-fixed-variant": "#075133",
+          "amber-cream": "#FDF8ED",
+          "mint-tint": "#E8F5EE",
+          "on-surface-variant": "#3f4942",
+          "on-tertiary-fixed": "#002111",
+          "primary-fixed": "#98f6bf",
+          "primary": "#005f3b",
+          "surface-container-highest": "#dce5dd",
+          "on-error-container": "#93000a",
+          "tertiary-fixed": "#aef2c7",
+          "surface-container": "#e7f0e8",
+          "on-secondary-fixed-variant": "#584400",
+          "surface-dim": "#d3dcd4",
+          "surface-container-low": "#edf6ee",
+          "surface-tint": "#006d44",
+          "outline": "#6f7a71",
+          "error-container": "#ffdad6",
+          "canvas-cream": "#FAFAF7",
+          "primary-fixed-dim": "#7cd9a5",
+          "secondary": "#755b00",
+          "error": "#ba1a1a",
+          "outline-variant": "#bec9bf",
+          "on-secondary-fixed": "#241a00",
+          "surface-variant": "#dce5dd",
+          "on-tertiary-container": "#b7fcd1",
+          "on-primary-fixed-variant": "#005232",
+          "inverse-on-surface": "#eaf3eb",
+          "accent-gold": "#E5BA38",
+          "on-secondary-container": "#735a00",
+          "secondary-fixed": "#ffe08e",
+          "surface": "#f3fcf3",
+          "inverse-surface": "#2a322d",
+          "tertiary-container": "#367755",
+          "background": "#f3fcf3",
+          "on-tertiary": "#ffffff",
+          "on-surface": "#151d19",
+          "tertiary": "#1a5e3e",
+          "secondary-container": "#fed255",
+          "primary-container": "#0f7a4e",
+          "on-primary-fixed": "#002111",
+          "inverse-primary": "#7cd9a5",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#e2eae2",
+          "on-primary-container": "#a7ffcb",
+          "tertiary-fixed-dim": "#92d5ac",
+          "secondary-fixed-dim": "#ecc246"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "4rem",
+          "space-3xl": "6rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1.25rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-md-mobile": [
+            "Playfair Display"
+          ],
+          "display-md": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "title-sm": [
+            "16px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "52px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(15,122,78,0.08)]"><div class="bg-primary text-on-primary py-1.5 px-6 border-b border-primary-container/40"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-y-1 font-label-sm text-label-sm"><div class="flex items-center gap-5"><a class="flex items-center gap-1.5 hover:text-secondary-fixed transition-colors" href="https://wa.me/923070121348"><span class="material-symbols-outlined text-[15px]">call</span><span>Direct WhatsApp &amp; Call: +92 307 0121348</span></a><span class="hidden sm:inline opacity-40">|</span><a class="hidden sm:flex items-center gap-1.5 hover:text-secondary-fixed transition-colors" href="mailto:alhudaquranacademy1348@gmail.com"><span class="material-symbols-outlined text-[15px]">mail</span><span>alhudaquranacademy1348@gmail.com</span></a></div><div class="flex items-center gap-4 ml-auto"><div class="flex items-center gap-1 bg-primary-container/60 px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[13px]">payments</span><select aria-label="Currency Selector" class="bg-transparent text-on-primary focus:outline-none cursor-pointer text-label-sm"><option class="text-on-surface" value="GBP">£ GBP (UK)</option><option class="text-on-surface" value="USD">$ USD (USA)</option><option class="text-on-surface" value="CAD">$ CAD (Canada)</option><option class="text-on-surface" value="EUR">€ EUR (Europe)</option><option class="text-on-surface" value="AUD">$ AUD (Australia)</option></select></div><div class="hidden md:flex items-center gap-1 bg-primary-container/60 px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[13px]">schedule</span><select aria-label="Timezone Selector" class="bg-transparent text-on-primary focus:outline-none cursor-pointer text-label-sm"><option class="text-on-surface" value="GMT">London (GMT+0)</option><option class="text-on-surface" value="EST">New York (EST)</option><option class="text-on-surface" value="TOR">Toronto (EST)</option><option class="text-on-surface" value="PST">California (PST)</option><option class="text-on-surface" value="SYD">Sydney (AEDT)</option></select></div><a class="flex items-center gap-1 text-secondary-fixed hover:text-on-primary font-label-sm transition-colors ml-1" data-path="login" href="contact.html"><span class="material-symbols-outlined text-[15px]">lock</span><span>Student Portal</span></a></div></div></div><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><a href="index.html" class="flex items-center gap-3.5"><div class="relative flex items-center justify-center"><img alt="Al-Huda Official Seal" class="w-11 h-11 rounded-full object-cover ring-2 ring-accent-gold/40 shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1X_ezCmIxFrGaBLsjMq0Ncg19RRq__d01O29HJQqlx9J1u8VKAnXAwyMerwDYnTHkixpZXc94-KVJd74VOP9VZCRr762dw1PljfnliMxDOsoGKbgxz_gmOPBdwrMG9EDBmFaOK1uZkAjJc1uumxdylt6LF3KQrsdOEAGqZc6Y2uE6dImysJZyvn6hK683e2GkPYPrM9gNvqS9wd4Zr0VQj6yDmI9rm74Xw43uv6aPUvFxT8ZBZsOCDXAkSvU4bdPjgChW4lIYcUMA"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Al-Huda</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Online Quran Institute</span></div></a><nav class="hidden xl:flex items-center gap-6" data-active-classes="text-primary font-bold border-b-2 border-primary"><a aria-current="page" class="transition-colors py-2 text-primary font-bold border-b-2 border-primary" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="about-us" href="about.html">About Us</a><div class="relative group py-2"><a class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" data-path="courses" href="courses.html"><span>Courses</span><span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform duration-200">expand_more</span></a><div class="absolute top-full left-0 hidden group-hover:block w-56 bg-surface-container-lowest rounded-xl shadow-xl border border-border-hairline p-2 z-50"><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="kids-quran" href="courses.html#kids">Kids Foundation</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="tajweed-teens" href="tajweed-ijazah.html">Teens Tajweed Track</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="adult-quran-arabic" href="courses.html#adults">Adults &amp; Sisters Program</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="hifz-memorization" href="courses.html#hifz">Hifz-ul-Quran Intensive</a></div></div><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="teachers" href="teachers.html">Teachers</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="pricing" href="pricing.html">Pricing</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="safeguarding" href="safeguarding.html">Safeguarding &amp; Safety</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="blog" href="about.html">Blog</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="contact" href="contact.html">Contact Us</a></nav><div class="flex items-center gap-4"><a class="flex items-center gap-2 bg-gradient-to-r from-secondary-container via-accent-gold to-secondary-container text-on-secondary-fixed px-5 py-2.5 rounded-full font-label-lg text-label-lg shadow-sm hover:shadow-md hover:brightness-105 active:scale-95 transition-all" data-path="book-trial" href="pricing.html#trialBookingForm"><span class="material-symbols-outlined text-[18px] text-secondary">stars</span><span>Book Free Trial Class</span></a><div class="xl:hidden flex items-center"><button aria-label="Toggle Mobile Navigation" class="p-2 text-on-surface hover:text-primary" type="button"><span class="material-symbols-outlined text-[26px]">menu</span></button></div></div></div></header><main class="w-full pt-[116px] bg-canvas-cream"><div class="flex flex-col w-full">
+<!-- Top Ambient Assurance Ribbon -->
+<section class="w-full bg-primary text-on-primary py-3 px-6 shadow-inner">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="inline-flex h-2 w-2 rounded-full bg-accent-gold animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Live Safeguarding Protocol 2026 Active</span>
+<span class="text-on-primary/40 hidden md:inline">•</span>
+<span class="font-body-sm text-body-sm text-on-primary/90 hidden md:inline">Audited to UK Department for Education &amp; COPPA Standards</span>
+</div>
+<div class="flex items-center gap-4 text-on-primary/80">
+<span class="font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-accent-gold">security</span>
+<span>Zero-Tolerance Abuse Policy</span>
+</span>
+<a class="font-label-sm text-label-sm text-secondary-fixed hover:text-white underline underline-offset-2 flex items-center gap-1" href="#report-portal">
+<span>Priority Reporting Desk</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 1: Hero & Trust Overview -->
+<section class="relative w-full bg-surface-container-lowest px-6 lg:px-12 py-16 lg:py-24 overflow-hidden">
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-mint-tint/70 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 -left-20 w-80 h-80 bg-amber-cream/80 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<span class="text-primary font-semibold">Trust, Child Safety &amp; Verification</span>
+</nav>
+<!-- Asymmetric Hero Composition -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<div class="lg:col-span-7 flex flex-col">
+<div class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-mint-tint text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider mb-6">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Accredited Child Welfare Standard</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight mb-6">
+            Uncompromising Child Safety &amp; Western Safeguarding Standards
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8 max-w-2xl">
+            Entrusting your child’s sacred education to an online academy requires utter confidence. As an institution educating young minds across the United Kingdom, USA, Canada, and Australia, we enforce UK DBS-level vetting, transparent parent-supervised classrooms, and end-to-end encryption. Child welfare is not merely our legal policy—it is a sacred trust (<em class="text-primary font-semibold">Amanah</em>).
+          </p>
+<!-- Action Stack -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2.5 bg-primary hover:bg-primary-container text-on-primary px-7 py-3.5 rounded-full font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all" href="#safeguarding-pillars">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<span>Review Our 4 Safety Pillars</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-amber-cream hover:bg-secondary-container text-on-secondary-fixed px-6 py-3.5 rounded-full font-label-lg text-label-lg shadow-sm transition-all" href="#report-portal">
+<span class="material-symbols-outlined text-[20px] text-secondary">contact_phone</span>
+<span>Speak to Child Safety Lead</span>
+</a>
+</div>
+<!-- Direct Phone Assurance Callout -->
+<div class="mt-8 flex items-center gap-3 p-3.5 rounded-xl bg-surface-subtle max-w-xl">
+<span class="material-symbols-outlined text-trust-blue text-[26px]">verified_user</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<span class="font-semibold text-primary">Need immediate compliance documentation?</span> Contact our UK/Intl Desk at <a class="text-trust-blue font-bold hover:underline" href="tel:+923070121348">+92 307 0121348</a> or request an audit packet.
+            </div>
+</div>
+</div>
+<!-- Right Side: Graphic Visual & Live Trust Shield -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-low">
+<img class="w-full h-80 object-cover" data-alt="A safe and modern home study environment where a happy 9-year-old British Muslim girl recites the Holy Quran on a tablet while her mother comfortably observes from a desk nearby in an airy, sunlit room with emerald green indoor plants and warm amber aesthetic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuxw9xtZNvDWusYg7X51cssLLusArXgaAkqMmRWAkyVWEPIWwdW0kVtYbyjuTxTCP70r4sptR7nbODui0JgjKl9vhA_kXheVbW0ytxxGoLv4nrb-6S3Cbpbu9zFWUiLU9o4jazjp4eZy0o16nHDTdh6qO9gGdbBr0-AQpMM7W6Sf2e8qZZnMPLUDKJa3dAHCxdBrbp0PzJqUC1M7K5iMMGzvvbm8z3M4uKy5U2m3JhUCqRKJKo_E7e"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex flex-col justify-end p-6 text-on-primary">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-accent-gold text-[22px]">lock</span>
+<span class="font-title-sm text-title-sm">100% Parent Spectator Access</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/80">
+                Log into any live session without audio disruption. Total peace of mind for every family, every minute.
+              </p>
+</div>
+</div>
+<!-- Statistical Proof Strip -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-surface-subtle p-4 rounded-xl text-center">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">100%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Background Checked</div>
+</div>
+<div class="bg-surface-subtle p-4 rounded-xl text-center">
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">2 hr</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Incident Escalation</div>
+</div>
+<div class="bg-surface-subtle p-4 rounded-xl text-center">
+<div class="font-headline-sm text-headline-sm text-trust-blue font-bold">COPPA</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Certified Privacy</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges Shelf -->
+<div class="mt-16 pt-10 border-t border-border-hairline">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-center mb-6 font-semibold">
+          Comprehensive Western Compliance Standards Enforced Across Every Class
+        </p>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-subtle hover:bg-mint-tint transition-colors">
+<div class="w-10 h-10 rounded-full bg-trust-blue/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-trust-blue text-[22px]">verified</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-sm text-body-md text-on-surface font-bold truncate">UK DBS Enhanced</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Cleared Staff</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-subtle hover:bg-mint-tint transition-colors">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-sm text-body-md text-on-surface font-bold truncate">US/CA Identity</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Verified Residence</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-subtle hover:bg-mint-tint transition-colors">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">videocam</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-sm text-body-md text-on-surface font-bold truncate">100% Monitored</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Session Audits</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-subtle hover:bg-mint-tint transition-colors">
+<div class="w-10 h-10 rounded-full bg-trust-blue/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-trust-blue text-[22px]">lock_clock</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-sm text-body-md text-on-surface font-bold truncate">GDPR &amp; COPPA</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Zero Data Sale</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-subtle hover:bg-mint-tint transition-colors">
+<div class="w-10 h-10 rounded-full bg-accent-gold/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">diversity_1</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-sm text-body-md text-on-surface font-bold truncate">Female Alimahs</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">For Sisters &amp; Kids</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Safeguarding Pillars Matrix (4 Cards) -->
+<section class="w-full bg-canvas-cream px-6 lg:px-12 py-20" id="safeguarding-pillars">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-3xl mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-mint-tint text-primary font-label-sm text-label-sm font-semibold uppercase mb-3">
+          Institutional Defense Framework
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4">
+          The Four Pillars of Student Protection
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Every layer of Al-Huda’s operational architecture is constructed to eliminate unsupervised vulnerability, protect digital privacy, and cultivate an uplifting, sacred learning space.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Pillar 1 -->
+<div class="flex flex-col bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-4 mb-6">
+<div class="w-14 h-14 rounded-xl bg-mint-tint flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[30px]">fingerprint</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-amber-cream text-secondary font-label-sm text-label-sm font-bold">Pillar 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">
+            Rigorous Staff Background Checks &amp; Identity Vetting
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            No tutor is granted classroom access without exhaustive institutional screening. We mirror the rigorous vetting standards required by public educational bodies across the UK, USA, and Commonwealth nations.
+          </p>
+<div class="space-y-3.5 mt-auto pt-4 border-t border-border-hairline">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>UK Enhanced DBS Checks:</strong> Criminal record history checks, Barred List evaluations, and permanent reference validations for UK and overseas tutors.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Government-Issued ID &amp; Proof of Address:</strong> Double-tier identity verification via biometric passport and national institutional registries.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Academic Character Inquiries:</strong> Mandatory interviews with previous Islamic centers, universities, or academic supervisors prior to onboarding.
+              </div>
+</div>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-4 mb-6">
+<div class="w-14 h-14 rounded-xl bg-amber-cream flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[30px]">screen_search_desktop</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-amber-cream text-secondary font-label-sm text-label-sm font-bold">Pillar 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">
+            Transparent, Parent-Supervised Virtual Classrooms
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Secrecy is strictly prohibited. We eliminate private backchannels by providing parents with continuous oversight, transparent audit tools, and total control over their child’s environment.
+          </p>
+<div class="space-y-3.5 mt-auto pt-4 border-t border-border-hairline">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Live Parental Spectator Pass:</strong> Parents may drop into any active session unnoticed from their portal without interrupting the lesson.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Automated Cloud Session Archive:</strong> All video, audio, and chat logs are safely stored on an encrypted server for 90 days for administrative audits.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>No Private Direct Messaging:</strong> Strict zero-tolerance ban on WhatsApp, social media, or personal email communication between tutors and minor students.
+              </div>
+</div>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-4 mb-6">
+<div class="w-14 h-14 rounded-xl bg-mint-tint flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[30px]">family_restroom</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-amber-cream text-secondary font-label-sm text-label-sm font-bold">Pillar 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">
+            Female Faculty for Sisters, Young Girls &amp; Toddlers
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Honoring Islamic adab (etiquette) and cultural modesty, Al-Huda maintains a full dedicated department of verified female Hafidhas and Alimahs trained specifically in child pedagogy.
+          </p>
+<div class="space-y-3.5 mt-auto pt-4 border-t border-border-hairline">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Exclusive Female Allocation:</strong> Female students and teenage girls are assigned verified female scholars for maximum comfort and spiritual mentorship.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Early Childhood Specialized Instructors:</strong> Compassionate, patient female teachers trained in gentle Noorani Qaida phonetics for learners aged 4–7.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Sisters’ Privacy Safeguards:</strong> High-security camera toggle settings and encrypted female-only virtual classroom cohorts for adult sisters.
+              </div>
+</div>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="flex flex-col bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-4 mb-6">
+<div class="w-14 h-14 rounded-xl bg-surface-subtle flex items-center justify-center">
+<span class="material-symbols-outlined text-trust-blue text-[30px]">enhanced_encryption</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-amber-cream text-secondary font-label-sm text-label-sm font-bold">Pillar 04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">
+            Data Security &amp; Privacy (UK GDPR &amp; US COPPA)
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Your family’s identity, biometric voice data, and geographic information are protected behind enterprise-grade encryption. We never monetize, share, or sell user records.
+          </p>
+<div class="space-y-3.5 mt-auto pt-4 border-t border-border-hairline">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>End-to-End TLS 1.3 / AES-256 Video Streams:</strong> Direct peer-encrypted interactive classrooms preventing external sniffing or unauthorized intrusion.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Zero Third-Party Data Transmission:</strong> Complete compliance with the Children’s Online Privacy Protection Act (COPPA) and UK Data Protection Act 2018.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong>Right to Erasure:</strong> Permanent deletion of student progress recordings upon completion or written parental request within 48 business hours.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Safeguarding Workflow Graphic / Timeline -->
+<section class="w-full bg-surface-container-lowest px-6 lg:px-12 py-20">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Vetting &amp; Oversight Pipeline</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-2 mb-4">
+          How Al-Huda Protects Every Student from Day One
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          A proactive, multi-stage defense system active before, during, and after every single recitation lesson.
+        </p>
+</div>
+<!-- Linear Timeline Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="relative flex flex-col bg-surface-subtle p-6 rounded-2xl transition-transform hover:-translate-y-1">
+<div class="flex items-center justify-between mb-4">
+<span class="font-display-md text-display-md text-secondary/30 font-bold">01</span>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[20px]">person_search</span>
+</div>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2">Phase 1: Vetting &amp; Criminal Screening</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Multi-tier background checks, DBS clearance verification, national identity registry authentication, and 2 professional reference interviews.
+          </p>
+<div class="mt-auto pt-3 border-t border-border-hairline text-label-sm font-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span>Pre-Hire Verification Pass</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col bg-surface-subtle p-6 rounded-2xl transition-transform hover:-translate-y-1">
+<div class="flex items-center justify-between mb-4">
+<span class="font-display-md text-display-md text-secondary/30 font-bold">02</span>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2">Phase 2: Safeguarding Induction</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Compulsory 4-week training covering child psychology, boundary management, online decorum, anti-bullying protocols, and positive reinforcement.
+          </p>
+<div class="mt-auto pt-3 border-t border-border-hairline text-label-sm font-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span>Signed Legal Code of Conduct</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col bg-surface-subtle p-6 rounded-2xl transition-transform hover:-translate-y-1">
+<div class="flex items-center justify-between mb-4">
+<span class="font-display-md text-display-md text-secondary/30 font-bold">03</span>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2">Phase 3: Monitored Delivery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Sessions run exclusively on encrypted, centralized academy portals. No third-party chat software. Parents hold real-time live spectator access.
+          </p>
+<div class="mt-auto pt-3 border-t border-border-hairline text-label-sm font-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span>Real-Time Cloud Audit Trails</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col bg-surface-subtle p-6 rounded-2xl transition-transform hover:-translate-y-1">
+<div class="flex items-center justify-between mb-4">
+<span class="font-display-md text-display-md text-secondary/30 font-bold">04</span>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-sm text-title-sm">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2">Phase 4: Behavioral Audits</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Senior Academic Supervisors conduct random monthly spot-checks, review session transcripts, and gather structured parental feedback.
+          </p>
+<div class="mt-auto pt-3 border-t border-border-hairline text-label-sm font-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span>Monthly Quality Scorecard</span>
+</div>
+</div>
+</div>
+<!-- Supervisor Quote Box -->
+<div class="mt-12 bg-mint-tint/50 p-8 rounded-2xl flex flex-col md:flex-row items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[32px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col">
+<p class="font-body-lg text-body-lg text-on-surface italic leading-relaxed">
+            “In traditional Islamic scholarship, a teacher is an inheritor of noble prophetic ethics. We combine this sacred moral duty with cutting-edge UK/US safeguarding compliance so every mother and father can have total tranquility when their child joins our virtual study circles.”
+          </p>
+<span class="font-label-lg text-label-lg text-primary font-bold mt-2">
+            Ustadh Muhammad Bilal — Designated Safeguarding Officer (DSO), Al-Huda Institute
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Designated Safeguarding Officer & Interactive Incident Reporting Form -->
+<section class="w-full bg-canvas-cream px-6 lg:px-12 py-20" id="report-portal">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: Officer Info & Fast Helpline -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-cream text-secondary font-label-sm text-label-sm font-bold uppercase mb-4 self-start">
+            Direct Governance Channel
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4">
+            Dedicated Child Safeguarding &amp; Welfare Desk
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-8">
+            Parents, students, or faculty may bypass normal administrative customer support to contact our Designated Safeguarding Officer (DSO) directly regarding any safety, privacy, or behavioral concerns.
+          </p>
+<!-- Contact Profile Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm mb-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-14 h-14 rounded-full bg-mint-tint flex items-center justify-center ring-2 ring-primary">
+<span class="material-symbols-outlined text-primary text-[28px]">shield_person</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Office of Child Protection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lead Officer: Ustadh M. Bilal, DSO Certified (UK)</p>
+</div>
+</div>
+<div class="space-y-3 font-body-sm text-body-sm">
+<a class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle hover:bg-mint-tint text-on-surface transition-colors" href="tel:+923070121348">
+<span class="material-symbols-outlined text-primary text-[20px]">phone_in_talk</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Emergency Line &amp; Direct WhatsApp</div>
+<div class="font-title-sm text-title-sm text-primary">+92 307 0121348</div>
+</div>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle hover:bg-mint-tint text-on-surface transition-colors" href="mailto:alhudaquranacademy1348@gmail.com">
+<span class="material-symbols-outlined text-trust-blue text-[20px]">mail</span>
+<div class="truncate">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Confidential Safety Email</div>
+<div class="font-title-sm text-title-sm text-on-surface truncate">alhudaquranacademy1348@gmail.com</div>
+</div>
+</a>
+</div>
+<!-- Guarantee Stamp -->
+<div class="mt-6 flex items-center gap-2.5 p-3 rounded-xl bg-amber-cream text-secondary">
+<span class="material-symbols-outlined text-[20px] text-accent-gold" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="font-label-md text-label-md font-bold">Mandatory 2-Hour Response Window for Safety Alerts</span>
+</div>
+</div>
+<!-- Confidentiality Pledge -->
+<div class="flex items-start gap-3 p-4 rounded-xl bg-surface-subtle">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">lock</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Strict Anonymity Respected:</strong> You may submit reports anonymously. All submissions are treated in rigorous alignment with UK Safeguarding Children Regulations 2023.
+            </div>
+</div>
+</div>
+<!-- Right: Secure Incident & Inquiry Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 lg:p-10 rounded-3xl shadow-lg">
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-border-hairline">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Confidential Safeguarding Inquiry Form</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Submit inquiries, request teacher background certificates, or report a concern.</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-mint-tint text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>256-Bit SSL Encrypted</span>
+</span>
+</div>
+<form class="space-y-5" id="safeguardForm" onsubmit="handleSafeguardSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Your Full Name *</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface border-0 shadow-sm ring-1 ring-border-hairline focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md" placeholder="e.g. Sarah Jenkins / Sister Fatima" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Contact Email *</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface border-0 shadow-sm ring-1 ring-border-hairline focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md" placeholder="parent@domain.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Phone / WhatsApp (with Country Code) *</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface border-0 shadow-sm ring-1 ring-border-hairline focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md" placeholder="+44 7911 123456 or +1..." required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Nature of Request / Report *</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface border-0 shadow-sm ring-1 ring-border-hairline focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md cursor-pointer" required="">
+<option value="">Select Category...</option>
+<option value="dbs">Request Tutor DBS / Identity Proof</option>
+<option value="tutor-change">Request Immediate Female Tutor Reassignment</option>
+<option value="recording">Request Class Recording Review</option>
+<option value="conduct">Report Tutor Conduct / Boundary Issue</option>
+<option value="privacy">GDPR / Data Deletion Request</option>
+<option value="general">General Child Safeguarding Question</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Student Name / Student ID (Optional)</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface border-0 shadow-sm ring-1 ring-border-hairline focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md" placeholder="e.g. Maryam A. (or leave blank for general inquiries)" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Student's Assigned Teacher (If known)</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface border-0 shadow-sm ring-1 ring-border-hairline focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md" placeholder="e.g. Ustadha Aisha / Not applicable" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Detailed Message or Incident Description *</label>
+<textarea class="w-full p-4 rounded-lg bg-surface-container-lowest text-on-surface border-0 shadow-sm ring-1 ring-border-hairline focus:ring-2 focus:ring-primary focus:outline-none font-body-md text-body-md" placeholder="Please provide specific details including dates, timestamps, or concerns so our DSO can take immediate and structured action..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-subtle rounded-lg">
+<input class="w-4 h-4 text-primary rounded focus:ring-primary" id="anonCheck" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer select-none" for="anonCheck">
+                I request that my identity remain strictly anonymous to the instructional staff.
+              </label>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-primary-container text-on-primary px-8 py-3.5 rounded-full font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Submit to Designated Safeguarding Officer</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-center">
+                Ref ID generated immediately upon submission
+              </span>
+</div>
+<div class="hidden p-4 rounded-xl bg-mint-tint text-primary font-body-md text-body-md flex items-center gap-3" id="formSuccessMessage">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<div>
+<strong>Report Received &amp; Logged.</strong> A confirmation email and immediate case ticket have been dispatched to our DSO. For emergencies, please call +92 307 0121348 directly.
+              </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Institutional Governance Document Downloads -->
+<section class="w-full bg-surface-container-lowest px-6 lg:px-12 py-20">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Policy Transparency</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">
+            Downloadable Governance Documents
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">
+            We publish our comprehensive institutional frameworks openly. Every parent and regulator is invited to examine our formal standards and legal commitments.
+          </p>
+</div>
+<a class="inline-flex items-center gap-2 text-primary hover:text-primary-container font-label-lg text-label-lg font-bold" href="https://wa.me/923070121348">
+<span>Need a customized compliance pack?</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Doc 1 -->
+<div class="bg-surface-subtle p-7 rounded-2xl flex flex-col justify-between hover:bg-mint-tint/50 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">picture_as_pdf</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface-variant font-medium">2026 Edition • 2.4 MB</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2">Al-Huda Child Protection &amp; Safeguarding Policy</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Our master regulatory manual covering staff vetting, behavioral boundaries, abuse indicators, escalation workflows, and UK DfE alignment.
+            </p>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm" onclick="simulateDownload('Al-Huda_Child_Protection_Policy_2026.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Official Policy (PDF)</span>
+</button>
+</div>
+<!-- Doc 2 -->
+<div class="bg-surface-subtle p-7 rounded-2xl flex flex-col justify-between hover:bg-mint-tint/50 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">gavel</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface-variant font-medium">2026 Edition • 1.8 MB</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2">Code of Conduct for Instructors &amp; Students</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Rules of engagement for virtual classrooms, communication ethics, attendance standards, anti-bullying pledges, and adab protocols.
+            </p>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm" onclick="simulateDownload('Al-Huda_Code_of_Conduct.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Code of Conduct (PDF)</span>
+</button>
+</div>
+<!-- Doc 3 -->
+<div class="bg-surface-subtle p-7 rounded-2xl flex flex-col justify-between hover:bg-mint-tint/50 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-12 h-12 rounded-xl bg-trust-blue/10 flex items-center justify-center text-trust-blue">
+<span class="material-symbols-outlined text-[28px]">lock</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface-variant font-medium">2026 Edition • 1.2 MB</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary mb-2">GDPR &amp; Student Digital Privacy Framework</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Comprehensive disclosure of how video stream encryptions function, biometric voice protection, and our absolute zero-sale data guarantee.
+            </p>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm" onclick="simulateDownload('Al-Huda_GDPR_Privacy_Charter.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Privacy Charter (PDF)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Direct Trial Assurance Banner -->
+<section class="w-full bg-primary text-on-primary px-6 lg:px-12 py-16">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-bold">Experience Our Safe Environment Risk-Free</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary tracking-tight mt-1 mb-3">
+          Book a Free 1-on-1 Trial Class With a Vetted Instructor
+        </h3>
+<p class="font-body-md text-body-md text-on-primary/80">
+          Parents are warmly invited to sit alongside their child during the complimentary trial class. Witness our respectful pedagogical manner, child-safe interface, and authentic Tajweed standard firsthand.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-4 shrink-0">
+<a class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary-container via-accent-gold to-secondary-container text-on-secondary-fixed px-8 py-4 rounded-full font-label-lg text-label-lg font-bold shadow-lg hover:brightness-105 transition-all" data-path="book-trial" href="pricing.html#trialBookingForm">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Book Free Parent-Supervised Trial</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-primary-container text-on-primary px-6 py-4 rounded-full font-label-lg text-label-lg font-bold hover:bg-opacity-80 transition-all" href="https://wa.me/923070121348">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>WhatsApp DSO Desk</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function handleSafeguardSubmit(event) {
+    event.preventDefault();
+    const successBox = document.getElementById('formSuccessMessage');
+    if (successBox) {
+      successBox.classList.remove('hidden');
+      event.target.reset();
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  function simulateDownload(filename) {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = 'fixed top-24 right-6 z-50 bg-primary text-on-primary px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 animate-bounce';
+    alertDiv.innerHTML = '<span class="material-symbols-outlined">download_done</span><span>Preparing institutional copy: ' + filename + '</span>';
+    document.body.appendChild(alertDiv);
+    setTimeout(() => {
+      alertDiv.remove();
+    }, 4000);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-border-hairline"><div class="bg-mint-tint/60 border-b border-border-hairline py-4 px-6"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-around gap-4 text-center"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-trust-blue">verified_user</span><span class="font-label-sm text-label-sm tracking-wide uppercase">UK DBS / Enhanced Background Checked Tutors</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-accent-gold">workspace_premium</span><span class="font-label-sm text-label-sm tracking-wide uppercase">Verified Al-Azhar &amp; Medina Ijazah</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-primary-container">security</span><span class="font-label-sm text-label-sm tracking-wide uppercase">100% Satisfaction or Money-Back Guarantee</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-primary">lock</span><span class="font-label-sm text-label-sm tracking-wide uppercase">GDPR Compliant &amp; SSL 256-Bit Encrypted</span></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-16"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"><div class="space-y-4"><div class="flex items-center gap-3"><img alt="Al-Huda Logo" class="w-10 h-10 rounded-full object-cover ring-1 ring-border-gilded" src="https://lh3.googleusercontent.com/aida/AEtjO1X_ezCmIxFrGaBLsjMq0Ncg19RRq__d01O29HJQqlx9J1u8VKAnXAwyMerwDYnTHkixpZXc94-KVJd74VOP9VZCRr762dw1PljfnliMxDOsoGKbgxz_gmOPBdwrMG9EDBmFaOK1uZkAjJc1uumxdylt6LF3KQrsdOEAGqZc6Y2uE6dImysJZyvn6hK683e2GkPYPrM9gNvqS9wd4Zr0VQj6yDmI9rm74Xw43uv6aPUvFxT8ZBZsOCDXAkSvU4bdPjgChW4lIYcUMA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary">Al-Huda</span><span class="font-label-sm text-label-sm text-secondary">Global Quran Institute</span></div></div><p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">An internationally accredited sacred learning institution delivering world-class 1-on-1 Quranic recitation, authentic Tajweed, and Classical Arabic education to Muslim families across the United Kingdom, North America, and globally.</p><div class="flex items-center gap-2 pt-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-cream border border-border-gilded rounded-full text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[15px]">stars</span>Accredited Global Curriculum</span></div></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Institutional Links</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="about-us" href="about.html">About Al-Huda Academy</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="safeguarding" href="safeguarding.html">DBS Safeguarding &amp; Child Safety Policy</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="teachers" href="teachers.html">Faculty &amp; Ijazah Verification</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="faqs" href="pricing.html#faq">Frequently Asked Questions</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="free-assessment" href="pricing.html">1-on-1 Free Evaluation</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="blog" href="about.html">Tajweed Guides &amp; Parent Resources</a></li></ul></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Certified Programs</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Noorani Qaida for Kids &amp; Beginners</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Quran Reading with Theoretical Tajweed</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Hifz-ul-Quran (Full &amp; Selected Surahs)</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Islamic Studies, Fiqh &amp; Duas for Youth</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Spoken Arabic &amp; Classical Quranic Arabic</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Female Tutors for Sisters &amp; Toddlers</a></li></ul></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Direct Advisory &amp; Support</h4><p class="text-body-sm font-body-sm text-on-surface-variant">Our admissions counselors and pedagogical supervisors are available 24/7 across UK, US, and CA timezones.</p><div class="space-y-3 font-body-sm text-body-sm"><a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="https://wa.me/923070121348"><span class="material-symbols-outlined text-[20px] text-primary">chat</span><div><div class="font-title-sm text-title-sm text-on-surface">WhatsApp &amp; Direct Phone</div><div class="text-on-surface-variant">+92 307 0121348</div></div></a><a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="mailto:alhudaquranacademy1348@gmail.com"><span class="material-symbols-outlined text-[20px] text-primary">alternate_email</span><div><div class="font-title-sm text-title-sm text-on-surface">Admissions Desk</div><div class="text-on-surface-variant">alhudaquranacademy1348@gmail.com</div></div></a><div class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-[20px] text-trust-blue">support_agent</span><div><div class="font-title-sm text-title-sm text-on-surface">Global Academic Support</div><div class="text-on-surface-variant">24 Hours / 7 Days a Week</div></div></div></div></div></div><div class="mt-12 pt-6 border-t border-border-hairline flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-3"><span class="font-label-sm text-label-sm text-on-surface-variant">Secure Global Payments Accepted:</span><div class="flex items-center gap-2 text-on-surface-variant"><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">VISA</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Mastercard</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Stripe</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">PayPal</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Direct Debit</span></div></div><div class="flex items-center gap-4 text-on-surface-variant text-label-sm font-label-sm"><a class="hover:text-primary" data-path="privacy-policy" href="#">Privacy Policy</a><span>•</span><a class="hover:text-primary" data-path="terms-of-service" href="#">Terms of Service</a><span>•</span><a class="hover:text-primary" data-path="child-protection" href="safeguarding.html">Child Protection Policy</a></div></div><div class="mt-6 text-center text-on-surface-variant font-label-sm text-label-sm">© 2026 Al-Huda Online Quran Institute. All Rights Reserved. Dedicated to excellence in sacred Quranic education worldwide.</div></div></footer><a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all" href="https://wa.me/923070121348" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[24px]">chat</span><span class="font-label-lg text-label-lg pr-1 font-bold">WhatsApp Us</span></a>  <script src="js/main.js"></script>
+</body></html>

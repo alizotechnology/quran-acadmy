@@ -51,7 +51,7 @@ const courses = [
 
 // Helper function to forward POST data to Google Sheets Web App URL
 function forwardToGoogleSheet(data) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const sheetUrl = process.env.GOOGLE_SHEET_WEBAPP_URL;
 
     if (!sheetUrl || sheetUrl.includes('YOUR_SCRIPT_ID')) {
@@ -129,10 +129,10 @@ app.get('/api/courses', (req, res) => {
 app.post('/api/contact', async (req, res) => {
   const { name, email, phone, course, message } = req.body;
 
-  if (!name || !email || !phone || !course) {
+  if (!name || !email || (!phone && !message)) {
     return res.status(400).json({
       success: false,
-      message: 'Name, email, phone, and course selection are required.'
+      message: 'Name, email, and phone or message are required.'
     });
   }
 
@@ -140,8 +140,8 @@ app.post('/api/contact', async (req, res) => {
     timestamp: new Date().toISOString(),
     name,
     email,
-    phone,
-    course,
+    phone: phone || '',
+    course: course || 'General Inquiry',
     message: message || ''
   };
 
@@ -150,8 +150,41 @@ app.post('/api/contact', async (req, res) => {
 
   res.status(200).json({
     success: true,
-    message: 'Thank you! Your registration request has been submitted successfully.',
+    message: 'Thank you! Your contact request has been submitted successfully.',
     data: submission,
+    googleSheetSync: sheetResult
+  });
+});
+
+// POST /api/trial - Handle Free Trial Booking & forward to Google Sheets
+app.post('/api/trial', async (req, res) => {
+  const { name, email, phone, course, timezone, tutorPref, notes } = req.body;
+
+  if (!name || !email || !phone) {
+    return res.status(400).json({
+      success: false,
+      message: 'Full name, email, and phone / WhatsApp number are required for booking a trial class.'
+    });
+  }
+
+  const trialSubmission = {
+    timestamp: new Date().toISOString(),
+    name,
+    email,
+    phone,
+    course: course || 'Free Trial Assessment',
+    timezone: timezone || 'GMT',
+    tutorPref: tutorPref || 'Any',
+    message: notes || '',
+    type: 'Free Trial Booking'
+  };
+
+  const sheetResult = await forwardToGoogleSheet(trialSubmission);
+
+  res.status(200).json({
+    success: true,
+    message: 'Free Trial Class requested successfully! Our admissions team will contact you shortly.',
+    data: trialSubmission,
     googleSheetSync: sheetResult
   });
 });
@@ -185,6 +218,50 @@ app.post('/api/enroll', async (req, res) => {
     success: true,
     message: `Enrollment for ${courseTitle} recorded successfully!`,
     data: enrollmentData,
+    googleSheetSync: sheetResult
+  });
+});
+
+// POST /api/safeguard - Handle Safeguarding & Safety Reports
+app.post('/api/safeguard', async (req, res) => {
+  const { name, email, phone, category, details, studentName, teacherName, anonymous } = req.body;
+
+  if (!details) {
+    return res.status(400).json({
+      success: false,
+      message: 'Detailed description or message is required.'
+    });
+  }
+
+  if (!anonymous && (!name || !email)) {
+    return res.status(400).json({
+      success: false,
+      message: 'Name and email are required for non-anonymous safeguarding submissions.'
+    });
+  }
+
+  const refId = 'ALH-' + Math.floor(100000 + Math.random() * 900000);
+
+  const safeguardReport = {
+    timestamp: new Date().toISOString(),
+    refId,
+    name: anonymous ? 'Anonymous' : (name || 'Anonymous'),
+    email: anonymous ? 'Hidden' : (email || ''),
+    phone: anonymous ? 'Hidden' : (phone || ''),
+    category: category || 'General Safeguarding Concern',
+    studentName: studentName || 'N/A',
+    teacherName: teacherName || 'N/A',
+    message: details,
+    type: 'Safeguarding Report'
+  };
+
+  const sheetResult = await forwardToGoogleSheet(safeguardReport);
+
+  res.status(200).json({
+    success: true,
+    message: `Safeguarding report submitted successfully. Reference ID: ${refId}`,
+    refId,
+    data: safeguardReport,
     googleSheetSync: sheetResult
   });
 });

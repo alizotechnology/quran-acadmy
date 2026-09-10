@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "trust-blue": "#1E5AA8",
+          "border-gilded": "#E6D7A8",
+          "surface-subtle": "#F4F6F3",
+          "on-error": "#ffffff",
+          "border-hairline": "#E2E8E4",
+          "surface-bright": "#f3fcf3",
+          "on-primary": "#ffffff",
+          "on-background": "#151d19",
+          "on-tertiary-fixed-variant": "#075133",
+          "amber-cream": "#FDF8ED",
+          "mint-tint": "#E8F5EE",
+          "on-surface-variant": "#3f4942",
+          "on-tertiary-fixed": "#002111",
+          "primary-fixed": "#98f6bf",
+          "primary": "#005f3b",
+          "surface-container-highest": "#dce5dd",
+          "on-error-container": "#93000a",
+          "tertiary-fixed": "#aef2c7",
+          "surface-container": "#e7f0e8",
+          "on-secondary-fixed-variant": "#584400",
+          "surface-dim": "#d3dcd4",
+          "surface-container-low": "#edf6ee",
+          "surface-tint": "#006d44",
+          "outline": "#6f7a71",
+          "error-container": "#ffdad6",
+          "canvas-cream": "#FAFAF7",
+          "primary-fixed-dim": "#7cd9a5",
+          "secondary": "#755b00",
+          "error": "#ba1a1a",
+          "outline-variant": "#bec9bf",
+          "on-secondary-fixed": "#241a00",
+          "surface-variant": "#dce5dd",
+          "on-tertiary-container": "#b7fcd1",
+          "on-primary-fixed-variant": "#005232",
+          "inverse-on-surface": "#eaf3eb",
+          "accent-gold": "#E5BA38",
+          "on-secondary-container": "#735a00",
+          "secondary-fixed": "#ffe08e",
+          "surface": "#f3fcf3",
+          "inverse-surface": "#2a322d",
+          "tertiary-container": "#367755",
+          "background": "#f3fcf3",
+          "on-tertiary": "#ffffff",
+          "on-surface": "#151d19",
+          "tertiary": "#1a5e3e",
+          "secondary-container": "#fed255",
+          "primary-container": "#0f7a4e",
+          "on-primary-fixed": "#002111",
+          "inverse-primary": "#7cd9a5",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#e2eae2",
+          "on-primary-container": "#a7ffcb",
+          "tertiary-fixed-dim": "#92d5ac",
+          "secondary-fixed-dim": "#ecc246"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "4rem",
+          "space-3xl": "6rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1.25rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-md-mobile": [
+            "Playfair Display"
+          ],
+          "display-md": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "title-sm": [
+            "16px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "52px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(15,122,78,0.08)]"><div class="bg-primary text-on-primary py-1.5 px-6 border-b border-primary-container/40"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-y-1 font-label-sm text-label-sm"><div class="flex items-center gap-5"><a class="flex items-center gap-1.5 hover:text-secondary-fixed transition-colors" href="https://wa.me/923070121348"><span class="material-symbols-outlined text-[15px]">call</span><span>Direct WhatsApp &amp; Call: +92 307 0121348</span></a><span class="hidden sm:inline opacity-40">|</span><a class="hidden sm:flex items-center gap-1.5 hover:text-secondary-fixed transition-colors" href="mailto:alhudaquranacademy1348@gmail.com"><span class="material-symbols-outlined text-[15px]">mail</span><span>alhudaquranacademy1348@gmail.com</span></a></div><div class="flex items-center gap-4 ml-auto"><div class="flex items-center gap-1 bg-primary-container/60 px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[13px]">payments</span><select aria-label="Currency Selector" class="bg-transparent text-on-primary focus:outline-none cursor-pointer text-label-sm"><option class="text-on-surface" value="GBP">£ GBP (UK)</option><option class="text-on-surface" value="USD">$ USD (USA)</option><option class="text-on-surface" value="CAD">$ CAD (Canada)</option><option class="text-on-surface" value="EUR">€ EUR (Europe)</option><option class="text-on-surface" value="AUD">$ AUD (Australia)</option></select></div><div class="hidden md:flex items-center gap-1 bg-primary-container/60 px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[13px]">schedule</span><select aria-label="Timezone Selector" class="bg-transparent text-on-primary focus:outline-none cursor-pointer text-label-sm"><option class="text-on-surface" value="GMT">London (GMT+0)</option><option class="text-on-surface" value="EST">New York (EST)</option><option class="text-on-surface" value="TOR">Toronto (EST)</option><option class="text-on-surface" value="PST">California (PST)</option><option class="text-on-surface" value="SYD">Sydney (AEDT)</option></select></div><a class="flex items-center gap-1 text-secondary-fixed hover:text-on-primary font-label-sm transition-colors ml-1" data-path="login" href="contact.html"><span class="material-symbols-outlined text-[15px]">lock</span><span>Student Portal</span></a></div></div></div><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><a href="index.html" class="flex items-center gap-3.5"><div class="relative flex items-center justify-center"><img alt="Al-Huda Official Seal" class="w-11 h-11 rounded-full object-cover ring-2 ring-accent-gold/40 shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1X_ezCmIxFrGaBLsjMq0Ncg19RRq__d01O29HJQqlx9J1u8VKAnXAwyMerwDYnTHkixpZXc94-KVJd74VOP9VZCRr762dw1PljfnliMxDOsoGKbgxz_gmOPBdwrMG9EDBmFaOK1uZkAjJc1uumxdylt6LF3KQrsdOEAGqZc6Y2uE6dImysJZyvn6hK683e2GkPYPrM9gNvqS9wd4Zr0VQj6yDmI9rm74Xw43uv6aPUvFxT8ZBZsOCDXAkSvU4bdPjgChW4lIYcUMA"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Al-Huda</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Online Quran Institute</span></div></a><nav class="hidden xl:flex items-center gap-6" data-active-classes="text-primary font-bold border-b-2 border-primary"><a aria-current="page" class="transition-colors py-2 text-primary font-bold border-b-2 border-primary" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="about-us" href="about.html">About Us</a><div class="relative group py-2"><a class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" data-path="courses" href="courses.html"><span>Courses</span><span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform duration-200">expand_more</span></a><div class="absolute top-full left-0 hidden group-hover:block w-56 bg-surface-container-lowest rounded-xl shadow-xl border border-border-hairline p-2 z-50"><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="kids-quran" href="courses.html#kids">Kids Foundation</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="tajweed-teens" href="tajweed-ijazah.html">Teens Tajweed Track</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="adult-quran-arabic" href="courses.html#adults">Adults &amp; Sisters Program</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="hifz-memorization" href="courses.html#hifz">Hifz-ul-Quran Intensive</a></div></div><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="teachers" href="teachers.html">Teachers</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="pricing" href="pricing.html">Pricing</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="safeguarding" href="safeguarding.html">Safeguarding &amp; Safety</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="blog" href="about.html">Blog</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="contact" href="contact.html">Contact Us</a></nav><div class="flex items-center gap-4"><a class="flex items-center gap-2 bg-gradient-to-r from-secondary-container via-accent-gold to-secondary-container text-on-secondary-fixed px-5 py-2.5 rounded-full font-label-lg text-label-lg shadow-sm hover:shadow-md hover:brightness-105 active:scale-95 transition-all" data-path="book-trial" href="pricing.html#trialBookingForm"><span class="material-symbols-outlined text-[18px] text-secondary">stars</span><span>Book Free Trial Class</span></a><div class="xl:hidden flex items-center"><button aria-label="Toggle Mobile Navigation" class="p-2 text-on-surface hover:text-primary" type="button"><span class="material-symbols-outlined text-[26px]">menu</span></button></div></div></div></header><main class="w-full pt-[116px] bg-canvas-cream"><div class="flex flex-col w-full">
+<!-- Top Breadcrumbs Bar -->
+<section class="w-full bg-surface-container-low py-4 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto flex items-center gap-2 text-label-md font-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="home" href="index.html">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">About Us &amp; Institutional Heritage</span>
+</div>
+</section>
+<!-- Hero Banner -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden py-16 lg:py-24 px-6 lg:px-12">
+<div class="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center">
+<svg class="w-[900px] h-[900px]" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<polygon class="text-primary" fill="currentColor" points="100,10 120,70 190,70 135,110 155,180 100,135 45,180 65,110 10,70 80,70"></polygon>
+<circle class="text-secondary" cx="100" cy="100" fill="none" r="80" stroke="currentColor" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mint-tint text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+          Sacred Heritage • Certified Western Standard
+        </div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight leading-tight">
+          Nurturing Sacred Knowledge Across Generations with Academic Integrity &amp; Modern Pedagogy
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-3xl">
+          Empowering Muslim diaspora families across the United Kingdom, United States, Canada, and Western Europe with authentic Sanad lineage, classical Al-Azhar pedagogy, and rigorous Western safeguarding standards.
+        </p>
+<!-- Key Metrics Strip -->
+<div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="p-4 rounded-xl bg-surface-subtle">
+<span class="block font-headline-md text-headline-md text-primary font-bold">10,000+</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Global Students</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-subtle">
+<span class="block font-headline-md text-headline-md text-secondary font-bold">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">DBS/Background Checked</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-subtle">
+<span class="block font-headline-md text-headline-md text-primary font-bold">28+</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Countries Represented</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-subtle">
+<span class="block font-headline-md text-headline-md text-secondary font-bold">14+ Centuries</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Authentic Lineage</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Representation -->
+<div class="lg:col-span-4 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-80 lg:h-96 object-cover" data-alt="Traditional open Quran manuscript with gilded illumination sitting on a wooden carved rehal stand beside an elegant modern tablet displaying digital recitation notes in an academic study room bathed in soft morning light, emerald green and gold accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALYWTsG4LVZA5DNyrC4j7cZE2uurYuewwb9-pFeYmh3k8UcHERMGMJUvcMtXSSX_kXffdatiCTGS4urlRozogZGuZzvfmDTkFyEA6lBA91mVQ_605SsQybtYaMAgV544CkdEiz52lHUS6chl0mpUMfubbLAnxPg2yX5nYAaA7nnDJ4qBhLnREFf8XaXsMCXSDS65LxUz7hquUskIp11JeJhNjTleB7Xl4uss90R1LlkcX-VFxj_a1D"/>
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wide">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Unbroken Transmission
+            </div>
+<p class="mt-2 font-headline-sm text-headline-sm text-primary">From Traditional Halaqah to Safe Digital Sanctuary</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story & Founding Vision -->
+<section class="w-full bg-surface-subtle py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 relative">
+<div class="rounded-2xl overflow-hidden shadow-md">
+<img class="w-full h-96 object-cover" data-alt="Senior Islamic scholar in traditional bisht and keffiyeh mentoring a young British Muslim boy and girl studying Quran reading under respectful, luminous daylight inside an educational library with arched Islamic architectural columns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeEzUyF-5_1IWR96An--Pnwm2ZbNt0VWXrGMlhqeR2JQzigmwQ8XsXlWOZhflBra-wf65_P_cirB7aqXQsqr6bA4KDeUlC5gNz_59sVRosDBximokzv3VRPP-iT05Mv2EWoUPWvdSlNaVOhHo-ZuD0EXSqkeysKjsp8jWwPVlwhzhcIsNTjtMg9VB8dL-3BCYaV-8u4BmRK22Lx-RCJb6uf7nltnv7gTyA8R-Mn6BkOYsVcsx4CIYm"/>
+</div>
+<div class="mt-4 p-5 rounded-xl bg-amber-cream">
+<p class="font-title-sm text-title-sm text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+            The Prophetic Trust (Amanah)
+          </p>
+<p class="mt-2 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            "The best among you are those who learn the Quran and teach it to others." — Sahih Bukhari
+          </p>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+          Founding Vision &amp; Genesis
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          Bridging Classical Quranic Scholarship with Modern Diaspora Life
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Founded through the collective initiative of esteemed scholars from <strong>Al-Azhar University (Cairo)</strong> and the <strong>Islamic University of Madinah</strong>, Al-Huda was created to address a critical vacuum experienced by Muslim families living in the West: the lack of accessible, verified, and safe Quranic instruction that respects both sacred transmission and busy contemporary lifestyles.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          While traditional mosques and cultural centers provide invaluable community ties, diaspora families regularly encounter rigid schedules, commuting difficulties, or instructional approaches ill-suited to native English-speaking children. Al-Huda transformed this paradigm by transposing the sacred intimacy of traditional <em>Halaqat</em> (study circles) into bespoke, private 1-on-1 virtual classrooms.
+        </p>
+<!-- Comparative Pillars -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-title-sm text-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">workspace_premium</span>
+              Sacred Sanad Certification
+            </span>
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+              Instruction verified via rigorous oral Ijazah chains back to the Prophet Muhammad (ﷺ).
+            </p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-title-sm text-title-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-trust-blue">shield</span>
+              UK DBS &amp; Child First Protocols
+            </span>
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+              Audited safeguarding policies, parental session visibility, and trained educators.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Institutional Pillars -->
+<section class="w-full bg-surface-container-lowest py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto space-y-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Our Framework</span>
+<h2 class="font-display-md text-display-md text-primary">The Four Core Pillars of Al-Huda</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Every lesson, syllabus, and teacher interaction is governed by four uncompromising institutional standards designed to provide supreme parental peace of mind.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pillar 1 -->
+<div class="p-6 rounded-2xl bg-surface-subtle shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-mint-tint flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[26px]">history_edu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Traditional Sanad Lineage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Recitation rooted in unbroken chains of oral transmission going back to the Prophet (PBUH). Every senior tutor holds verified Ijazah in Hafs, Warsh, or the Ten Qira'at from prestigious centers in Egypt and Saudi Arabia.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Authentic Oral Transmission
+          </div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-6 rounded-2xl bg-surface-subtle shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-mint-tint flex items-center justify-center text-trust-blue mb-5">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Western Safeguarding Compliance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              We mandate full UK DBS enhanced criminal record checks and equivalent US/Canadian background screening for every educator. Transparent class recordings and parental presence guarantee total safety.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container flex items-center gap-2 text-trust-blue font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+            Audited Child Protection
+          </div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-6 rounded-2xl bg-surface-subtle shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-mint-tint flex items-center justify-center text-secondary mb-5">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Student-Centric Pedagogy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              No hurried rote memorization. Our 1-on-1 pacing adapts to every child's phonetics, attention span, and school schedule with quarterly diagnostic evaluations and structured parent portals.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">analytics</span>
+            Measurable Academic Growth
+          </div>
+</div>
+<!-- Pillar 4 -->
+<div class="p-6 rounded-2xl bg-surface-subtle shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-mint-tint flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[26px]">diversity_3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Accessibility &amp; Inclusivity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              A comprehensive faculty of certified female Alimahs for sisters and young children. 24/7 multi-timezone class scheduling alongside straightforward local billing in GBP (£), USD ($), and CAD ($).
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">public</span>
+            Serving UK, USA, Canada &amp; EU
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Milestone Timeline -->
+<section class="w-full bg-surface-subtle py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto space-y-3">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Our Journey</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">A Decade of Sacred Service</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Click through key institutional milestones that shaped our global e-learning standards.
+        </p>
+</div>
+<!-- Timeline Tabs / Selector -->
+<div class="flex flex-wrap justify-center gap-2" id="timeline-buttons">
+<button class="timeline-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm" data-idx="0" onclick="showMilestone(0)">2014: Inception</button>
+<button class="timeline-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary" data-idx="1" onclick="showMilestone(1)">2017: DBS Standards</button>
+<button class="timeline-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary" data-idx="2" onclick="showMilestone(2)">2020: Global Portal</button>
+<button class="timeline-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary" data-idx="3" onclick="showMilestone(3)">2023: Sisters Academy</button>
+<button class="timeline-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary" data-idx="4" onclick="showMilestone(4)">Today: 10,000+ Students</button>
+</div>
+<!-- Timeline Display Card -->
+<div class="max-w-4xl mx-auto p-8 rounded-2xl bg-surface-container-lowest shadow-md grid grid-cols-1 md:grid-cols-12 gap-8 items-center transition-all duration-300" id="timeline-card">
+<div class="md:col-span-5 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-56 object-cover" data-alt="Small group of Islamic university graduates in Medina holding parchment Sanad certificates with green ribbons under classic archways, beginning the digital academy movement." id="milestone-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxylufVXdhKU5uGqNwSOPdxYyM6r-fQ0acbhUqnm7Y8lxb8T2hcSo3g2vGtu8ptZD9lZFgSBJX_YfHGIX3QmMbBzlkz1ZkBowyPURBljpOYschKlgpkWn62O9jWKy1vT0H0dyeAB3ZZQQJrey5owDejOcGXzMl8utrEmHyIqFyEH-WDXdM8oHTGwuWQZ9Bmml2Po4xIKw3RikhmqnVSINAJ84dr_R4CD8d-8Q4k8ddIZC8fhjdL8MW"/>
+</div>
+<div class="md:col-span-7 space-y-4">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-mint-tint text-primary font-label-sm text-label-sm font-bold" id="milestone-year">
+            EST. 2014
+          </div>
+<h3 class="font-headline-md text-headline-md text-primary" id="milestone-title">Founding in Madinah &amp; Cairo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="milestone-desc">
+            Al-Huda was created by four university scholars aiming to digitize authentic Quranic instruction. Starting with just 25 overseas British-Pakistani and American students, classes were delivered with meticulous Tajweed attention.
+          </p>
+<div class="flex items-center gap-4 text-secondary font-label-sm text-label-sm pt-2" id="milestone-stat">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>25 Initial Diaspora Students</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership & Academic Advisory Board -->
+<section class="w-full bg-surface-container-lowest py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto space-y-3">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Faculty Leadership</span>
+<h2 class="font-display-md text-display-md text-primary">Academic Advisory Board</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Our curriculum, educational standards, and faculty accreditations are directly steered by distinguished Islamic scholars and child welfare professionals.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Profile 1 -->
+<div class="rounded-2xl bg-surface-subtle overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Portrait of Sheikh Dr. Tariq Al-Madani, senior scholar wearing formal dark green robes and traditional white keffiyeh, smiling with intellectual warmth in his private library in Madinah." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDepaxT6Zcty1WUWAsA3QOgLuqwIHYMCWFWGjKdlLSoCXlhvNhULUdgmpox0vatanysIWJ8urjJk_neOyC7aulWlHIP_x5mydSSAXuiM_ynoJPC7V5pDwnI7jJ17PJorUkGwmk88VO1fQiFCzbAzFYmgSjVW1KHD1qlaIdH32269_7KDws0RsxUw4ivht14qbg6HNbgmMPXlBVjltsjoS9TTj4UCtLrF4l5n7s452rnUe-_Og4wZyhe"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm shadow">
+              Al-Madinah Sanad
+            </div>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-title-lg text-title-lg text-primary">Sheikh Dr. Tariq Al-Madani</h3>
+<p class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Chairman of Academic Council</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              PhD in Quranic Exegesis &amp; Qira'at from Islamic University of Madinah. Holds 10 Qira'at Ijazah with unbroken transmission back to the Prophet (ﷺ). Oversees syllabus accuracy and pedagogical evaluations.
+            </p>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-on-surface-variant text-label-sm font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-accent-gold">school</span> 22+ Yrs Experience</span>
+<span class="text-primary font-bold">10 Qira'at Sanad</span>
+</div>
+</div>
+</div>
+<!-- Profile 2 -->
+<div class="rounded-2xl bg-surface-subtle overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Portrait of Ustadh Muhammad Bilal, young British-Muslim educator in a tailored navy blazer and clean beard, sitting in an academic office in London with safeguarding certificates displayed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVcjTNCS-n-qmI0esWFIpiAK9q4bQJqrKuNlkr5gY688wFDTHZF7Gjb295xNUvR4tttJsv9T3ZUcgeyPdwi-KTfoc2i53iElCbGue7Q_QxwOx79tp2ahGFiek2ROuYKwlRSg6uIxGzTFcsThodyvJdzWBG2vfALhv9VlnNCBVD2BS1a0OYUfck6vSMsk071ZYzSzAhLkNKh8QBskJY-EiZfGw9JJl2RtPG-0STyrbRvqlAmVfUmLsC"/>
+<div class="absolute top-4 right-4 bg-trust-blue text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm shadow">
+              UK DBS Officer
+            </div>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-title-lg text-title-lg text-primary">Ustadh Muhammad Bilal</h3>
+<p class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Dean of Admissions &amp; Designated Safeguarding Officer</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Al-Azhar Faculty of Languages alumnus &amp; certified UK Child Protection Officer (Level 3 Safeguarding). Guides student placement diagnostics and guarantees rigorous adherence to UK &amp; North American safety norms.
+            </p>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-on-surface-variant text-label-sm font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-trust-blue">verified</span> UK Safeguarding Lead</span>
+<span class="text-primary font-bold">London, UK</span>
+</div>
+</div>
+</div>
+<!-- Profile 3 -->
+<div class="rounded-2xl bg-surface-subtle overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Modest educational environment setup with an ornate Islamic calligraphy background representing Ustadha Fatima Al-Zahra's early childhood Quran department with colorful Tajweed educational aids and Noorani Qaida flashcards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfnioLlhAmLvrXnxyw6idnpSs7ISt3wsb3DDsXI0X7dP5fO_ZM2YS6Sx3dsWfHVFAgs5D4ETqlPVLJte585aNPIDjFYWzMupDNUyGOdbBouLbHp0Q5ykYARYHwz5Q4JueplNNwLhPJTd8B8dvLIrUrik38HZVkEJ2MgFWKPiohCKlfwASrPwzHptVhXWp27fuc8s2DLXlRu7hMdQA1i76uGdNkvQK3VMRVquZtiyS_F--giBkQ6qN9"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm shadow">
+              Umm al-Qura
+            </div>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-title-lg text-title-lg text-primary">Ustadha Fatima Al-Zahra</h3>
+<p class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Head of Sisters &amp; Early Childhood Department</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Graduate of Umm al-Qura University (Makkah) specializing in Early Quranic Phonetics &amp; Noorani Qaida methodology. Mentors our worldwide corps of 45+ vetted female Quran tutors.
+            </p>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between text-on-surface-variant text-label-sm font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">child_care</span> Early Childhood Specialist</span>
+<span class="text-primary font-bold">45+ Female Tutors</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Accreditations & Affiliations Grid -->
+<section class="w-full bg-surface-subtle py-16 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-xl mx-auto mb-10">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Institutional Verification</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Recognized Academic &amp; Safety Accreditations</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="p-3 rounded-lg bg-mint-tint text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Al-Azhar Sanad Verification</h4>
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+              Continuous validation of tutor recitation credentials by licensed Quranic faculties in Cairo.
+            </p>
+</div>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="p-3 rounded-lg bg-mint-tint text-trust-blue shrink-0">
+<span class="material-symbols-outlined text-[28px]">shield_person</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">UK DBS &amp; Child Safety</h4>
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+              Full adherence to UK enhanced vetting standards and North American background screening guidelines.
+            </p>
+</div>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="p-3 rounded-lg bg-mint-tint text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">auto_stories</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Western Quran Tutors Guild</h4>
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+              Charter member committed to high-retention English-medium digital pedagogical frameworks.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="w-full bg-surface-container-lowest py-20 px-6 lg:px-12">
+<div class="max-w-5xl mx-auto rounded-3xl bg-gradient-to-br from-primary to-primary-container text-on-primary p-8 lg:p-14 shadow-xl relative overflow-hidden">
+<!-- Decorative Arabesque Backdrop -->
+<div class="absolute -right-16 -bottom-16 w-80 h-80 opacity-10 pointer-events-none">
+<svg class="text-on-primary w-full h-full" fill="none" stroke="currentColor" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="45" stroke-width="1.5"></circle>
+<polygon points="50,5 95,50 50,95 5,50" stroke-width="1.5"></polygon>
+<polygon points="20,20 80,20 80,80 20,80" stroke-width="1.5"></polygon>
+</svg>
+</div>
+<div class="relative z-10 max-w-2xl space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-primary/10 text-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Zero Risk • No Credit Card Required
+        </div>
+<h2 class="font-display-md text-display-md text-on-primary leading-tight">
+          Experience Sacred Learning First-Hand — Book Your Free 3-Day Assessment
+        </h2>
+<p class="font-body-lg text-body-lg text-on-primary/90 leading-relaxed">
+          Meet your assigned native tutor, receive a detailed Tajweed proficiency diagnosis, and discover how our structured 1-on-1 pacing nurtures a lifelong love for the Holy Quran in your household.
+        </p>
+<div class="pt-4 flex flex-wrap items-center gap-4">
+<a class="flex items-center gap-2 bg-gradient-to-r from-secondary-container via-accent-gold to-secondary-container text-on-secondary-fixed px-7 py-3.5 rounded-full font-title-sm text-title-sm shadow-md hover:brightness-105 active:scale-95 transition-all" data-path="book-trial" href="pricing.html#trialBookingForm">
+<span class="material-symbols-outlined text-[20px] text-secondary">event_available</span>
+<span>Book 3-Day Free Trial</span>
+</a>
+<a class="flex items-center gap-2 bg-on-primary/10 hover:bg-on-primary/20 text-on-primary px-6 py-3.5 rounded-full font-title-sm text-title-sm backdrop-blur-sm transition-colors" href="https://wa.me/923070121348" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">chat</span>
+<span>Direct WhatsApp: +92 307 0121348</span>
+</a>
+</div>
+<div class="pt-4 flex items-center gap-6 text-label-sm font-label-sm text-on-primary/80">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">schedule</span>
+            Flexible 24/7 Scheduling
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">female</span>
+            Female Tutors Available
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">currency_pound</span>
+            Multi-Currency Billing
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Inline Timeline Micro-interaction Script -->
+<script>
+    const milestones = [
+      {
+        year: "EST. 2014",
+        title: "Founding in Madinah & Cairo",
+        desc: "Al-Huda was created by four university scholars aiming to digitize authentic Quranic instruction. Starting with just 25 overseas British-Pakistani and American students, classes were delivered with meticulous Tajweed attention.",
+        stat: "25 Initial Diaspora Students",
+        imgAlt: "Small group of Islamic university graduates in Medina holding parchment Sanad certificates with green ribbons under classic archways, beginning the digital academy movement."
+      },
+      {
+        year: "2017 EXPANSION",
+        title: "Pioneering Western Safeguarding",
+        desc: "Became the first international online Quran platform to institutionalize mandatory UK DBS checks, identity authentication, and parent-accessible lesson logs across all 1-on-1 cohorts.",
+        stat: "100% Background-Vetted Faculty",
+        imgAlt: "An academic verification room with official safeguarding documents and security stamps for online educational tutors in the United Kingdom."
+      },
+      {
+        year: "2020 INNOVATION",
+        title: "Next-Gen Interactive Digital Halaqah",
+        desc: "Rolled out our proprietary browser-based interactive classroom featuring real-time digital Tajweed color-coding, multi-timezone calendar scheduling, and automated revision trackers.",
+        stat: "Over 3,500 Families Enrolled",
+        imgAlt: "Digital Quran teaching interface showing interactive Noorani Qaida characters with bright highlights on a laptop screen."
+      },
+      {
+        year: "2023 ACCREDITATION",
+        title: "Dedicated Sisters & Youth Department",
+        desc: "Established the specialized Sisters & Early Childhood division, led by Ustadha Fatima Al-Zahra, employing 40+ female certified Huffaz to provide comfortable sacred learning environments.",
+        stat: "45+ Certified Female Alimahs",
+        imgAlt: "Comfortable home learning nook with young girl wearing modest headscarf enthusiastically studying Quran on a tablet with her female online teacher."
+      },
+      {
+        year: "PRESENT DAY",
+        title: "10,000+ Students Across 28 Nations",
+        desc: "Today, Al-Huda stands as a global beacon of sacred knowledge, connecting diaspora families across London, Birmingham, New York, Toronto, and Sydney with verified authentic pedagogy.",
+        stat: "10,000+ Active Worldwide Learners",
+        imgAlt: "World map overlay showing glowing emerald green connection points across the UK, North America, Europe, and Australia, symbolizing connected Quranic students."
+      }
+    ];
+
+    function showMilestone(index) {
+      const item = milestones[index];
+      const card = document.getElementById("timeline-card");
+      if (!card) return;
+
+      // Animate transition
+      card.style.opacity = '0.4';
+      setTimeout(() => {
+        document.getElementById("milestone-year").innerText = item.year;
+        document.getElementById("milestone-title").innerText = item.title;
+        document.getElementById("milestone-desc").innerText = item.desc;
+        document.getElementById("milestone-stat").innerHTML = `<span class="material-symbols-outlined text-[18px]">verified</span><span>${item.stat}</span>`;
+        const img = document.getElementById("milestone-img");
+        if (img) img.setAttribute("data-alt", item.imgAlt);
+
+        // Update button styles
+        const buttons = document.querySelectorAll(".timeline-btn");
+        buttons.forEach((btn, idx) => {
+          if (idx === index) {
+            btn.className = "timeline-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm";
+          } else {
+            btn.className = "timeline-btn px-5 py-2.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant hover:text-primary";
+          }
+        });
+
+        card.style.opacity = '1';
+      }, 150);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-border-hairline"><div class="bg-mint-tint/60 border-b border-border-hairline py-4 px-6"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-around gap-4 text-center"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-trust-blue">verified_user</span><span class="font-label-sm text-label-sm tracking-wide uppercase">UK DBS / Enhanced Background Checked Tutors</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-accent-gold">workspace_premium</span><span class="font-label-sm text-label-sm tracking-wide uppercase">Verified Al-Azhar &amp; Medina Ijazah</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-primary-container">security</span><span class="font-label-sm text-label-sm tracking-wide uppercase">100% Satisfaction or Money-Back Guarantee</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-primary">lock</span><span class="font-label-sm text-label-sm tracking-wide uppercase">GDPR Compliant &amp; SSL 256-Bit Encrypted</span></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-16"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"><div class="space-y-4"><div class="flex items-center gap-3"><img alt="Al-Huda Logo" class="w-10 h-10 rounded-full object-cover ring-1 ring-border-gilded" src="https://lh3.googleusercontent.com/aida/AEtjO1X_ezCmIxFrGaBLsjMq0Ncg19RRq__d01O29HJQqlx9J1u8VKAnXAwyMerwDYnTHkixpZXc94-KVJd74VOP9VZCRr762dw1PljfnliMxDOsoGKbgxz_gmOPBdwrMG9EDBmFaOK1uZkAjJc1uumxdylt6LF3KQrsdOEAGqZc6Y2uE6dImysJZyvn6hK683e2GkPYPrM9gNvqS9wd4Zr0VQj6yDmI9rm74Xw43uv6aPUvFxT8ZBZsOCDXAkSvU4bdPjgChW4lIYcUMA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary">Al-Huda</span><span class="font-label-sm text-label-sm text-secondary">Global Quran Institute</span></div></div><p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">An internationally accredited sacred learning institution delivering world-class 1-on-1 Quranic recitation, authentic Tajweed, and Classical Arabic education to Muslim families across the United Kingdom, North America, and globally.</p><div class="flex items-center gap-2 pt-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-cream border border-border-gilded rounded-full text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[15px]">stars</span>Accredited Global Curriculum</span></div></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Institutional Links</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="about-us" href="about.html">About Al-Huda Academy</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="safeguarding" href="safeguarding.html">DBS Safeguarding &amp; Child Safety Policy</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="teachers" href="teachers.html">Faculty &amp; Ijazah Verification</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="faqs" href="pricing.html#faq">Frequently Asked Questions</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="free-assessment" href="pricing.html">1-on-1 Free Evaluation</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="blog" href="about.html">Tajweed Guides &amp; Parent Resources</a></li></ul></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Certified Programs</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Noorani Qaida for Kids &amp; Beginners</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Quran Reading with Theoretical Tajweed</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Hifz-ul-Quran (Full &amp; Selected Surahs)</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Islamic Studies, Fiqh &amp; Duas for Youth</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Spoken Arabic &amp; Classical Quranic Arabic</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Female Tutors for Sisters &amp; Toddlers</a></li></ul></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Direct Advisory &amp; Support</h4><p class="text-body-sm font-body-sm text-on-surface-variant">Our admissions counselors and pedagogical supervisors are available 24/7 across UK, US, and CA timezones.</p><div class="space-y-3 font-body-sm text-body-sm"><a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="https://wa.me/923070121348"><span class="material-symbols-outlined text-[20px] text-primary">chat</span><div><div class="font-title-sm text-title-sm text-on-surface">WhatsApp &amp; Direct Phone</div><div class="text-on-surface-variant">+92 307 0121348</div></div></a><a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="mailto:alhudaquranacademy1348@gmail.com"><span class="material-symbols-outlined text-[20px] text-primary">alternate_email</span><div><div class="font-title-sm text-title-sm text-on-surface">Admissions Desk</div><div class="text-on-surface-variant">alhudaquranacademy1348@gmail.com</div></div></a><div class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-[20px] text-trust-blue">support_agent</span><div><div class="font-title-sm text-title-sm text-on-surface">Global Academic Support</div><div class="text-on-surface-variant">24 Hours / 7 Days a Week</div></div></div></div></div></div><div class="mt-12 pt-6 border-t border-border-hairline flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-3"><span class="font-label-sm text-label-sm text-on-surface-variant">Secure Global Payments Accepted:</span><div class="flex items-center gap-2 text-on-surface-variant"><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">VISA</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Mastercard</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Stripe</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">PayPal</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Direct Debit</span></div></div><div class="flex items-center gap-4 text-on-surface-variant text-label-sm font-label-sm"><a class="hover:text-primary" data-path="privacy-policy" href="#">Privacy Policy</a><span>•</span><a class="hover:text-primary" data-path="terms-of-service" href="#">Terms of Service</a><span>•</span><a class="hover:text-primary" data-path="child-protection" href="safeguarding.html">Child Protection Policy</a></div></div><div class="mt-6 text-center text-on-surface-variant font-label-sm text-label-sm">© 2026 Al-Huda Online Quran Institute. All Rights Reserved. Dedicated to excellence in sacred Quranic education worldwide.</div></div></footer><a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all" href="https://wa.me/923070121348" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[24px]">chat</span><span class="font-label-lg text-label-lg pr-1 font-bold">WhatsApp Us</span></a>  <script src="js/main.js"></script>
+</body></html>

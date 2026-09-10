@@ -1,241 +1,1184 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quran Academy - Online Quran Learning & Islamic Studies</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-  <!-- Header / Navigation -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">
-        <span class="arabic-logo">القرآن</span> Quran<span>Academy</span>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#courses">Courses</a>
-        <a href="#features">Why Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a href="#contact" class="btn btn-primary nav-btn">Get Free Trial</a>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="container hero-container">
-      <div class="hero-content">
-        <span class="badge">Online Quran & Arabic Classes</span>
-        <h1>Learn Quran Online with Certified Native Tutors</h1>
-        <p>Master Quran Recitation, Tajweed, Hifz, and Arabic Language from the comfort of your home with 1-on-1 personalized live classes for kids & adults.</p>
-        <div class="hero-btns">
-          <a href="#contact" class="btn btn-primary">Book Free Trial Class</a>
-          <a href="#courses" class="btn btn-outline">Explore Courses</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <h3>5,000+</h3>
-            <p>Students Enrolled</p>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "trust-blue": "#1E5AA8",
+          "border-gilded": "#E6D7A8",
+          "surface-subtle": "#F4F6F3",
+          "on-error": "#ffffff",
+          "border-hairline": "#E2E8E4",
+          "surface-bright": "#f3fcf3",
+          "on-primary": "#ffffff",
+          "on-background": "#151d19",
+          "on-tertiary-fixed-variant": "#075133",
+          "amber-cream": "#FDF8ED",
+          "mint-tint": "#E8F5EE",
+          "on-surface-variant": "#3f4942",
+          "on-tertiary-fixed": "#002111",
+          "primary-fixed": "#98f6bf",
+          "primary": "#005f3b",
+          "surface-container-highest": "#dce5dd",
+          "on-error-container": "#93000a",
+          "tertiary-fixed": "#aef2c7",
+          "surface-container": "#e7f0e8",
+          "on-secondary-fixed-variant": "#584400",
+          "surface-dim": "#d3dcd4",
+          "surface-container-low": "#edf6ee",
+          "surface-tint": "#006d44",
+          "outline": "#6f7a71",
+          "error-container": "#ffdad6",
+          "canvas-cream": "#FAFAF7",
+          "primary-fixed-dim": "#7cd9a5",
+          "secondary": "#755b00",
+          "error": "#ba1a1a",
+          "outline-variant": "#bec9bf",
+          "on-secondary-fixed": "#241a00",
+          "surface-variant": "#dce5dd",
+          "on-tertiary-container": "#b7fcd1",
+          "on-primary-fixed-variant": "#005232",
+          "inverse-on-surface": "#eaf3eb",
+          "accent-gold": "#E5BA38",
+          "on-secondary-container": "#735a00",
+          "secondary-fixed": "#ffe08e",
+          "surface": "#f3fcf3",
+          "inverse-surface": "#2a322d",
+          "tertiary-container": "#367755",
+          "background": "#f3fcf3",
+          "on-tertiary": "#ffffff",
+          "on-surface": "#151d19",
+          "tertiary": "#1a5e3e",
+          "secondary-container": "#fed255",
+          "primary-container": "#0f7a4e",
+          "on-primary-fixed": "#002111",
+          "inverse-primary": "#7cd9a5",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#e2eae2",
+          "on-primary-container": "#a7ffcb",
+          "tertiary-fixed-dim": "#92d5ac",
+          "secondary-fixed-dim": "#ecc246"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "4rem",
+          "space-3xl": "6rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1.25rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-md-mobile": [
+            "Playfair Display"
+          ],
+          "display-md": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "title-sm": [
+            "16px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md-mobile": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-md": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "52px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(15,122,78,0.08)]"><div class="bg-primary text-on-primary py-1.5 px-6 border-b border-primary-container/40"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-y-1 font-label-sm text-label-sm"><div class="flex items-center gap-5"><a class="flex items-center gap-1.5 hover:text-secondary-fixed transition-colors" href="https://wa.me/923070121348"><span class="material-symbols-outlined text-[15px]">call</span><span>Direct WhatsApp &amp; Call: +92 307 0121348</span></a><span class="hidden sm:inline opacity-40">|</span><a class="hidden sm:flex items-center gap-1.5 hover:text-secondary-fixed transition-colors" href="mailto:alhudaquranacademy1348@gmail.com"><span class="material-symbols-outlined text-[15px]">mail</span><span>alhudaquranacademy1348@gmail.com</span></a></div><div class="flex items-center gap-4 ml-auto"><div class="flex items-center gap-1 bg-primary-container/60 px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[13px]">payments</span><select aria-label="Currency Selector" class="bg-transparent text-on-primary focus:outline-none cursor-pointer text-label-sm"><option class="text-on-surface" value="GBP">£ GBP (UK)</option><option class="text-on-surface" value="USD">$ USD (USA)</option><option class="text-on-surface" value="CAD">$ CAD (Canada)</option><option class="text-on-surface" value="EUR">€ EUR (Europe)</option><option class="text-on-surface" value="AUD">$ AUD (Australia)</option></select></div><div class="hidden md:flex items-center gap-1 bg-primary-container/60 px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[13px]">schedule</span><select aria-label="Timezone Selector" class="bg-transparent text-on-primary focus:outline-none cursor-pointer text-label-sm"><option class="text-on-surface" value="GMT">London (GMT+0)</option><option class="text-on-surface" value="EST">New York (EST)</option><option class="text-on-surface" value="TOR">Toronto (EST)</option><option class="text-on-surface" value="PST">California (PST)</option><option class="text-on-surface" value="SYD">Sydney (AEDT)</option></select></div><a class="flex items-center gap-1 text-secondary-fixed hover:text-on-primary font-label-sm transition-colors ml-1" data-path="login" href="contact.html"><span class="material-symbols-outlined text-[15px]">lock</span><span>Student Portal</span></a></div></div></div><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><a href="index.html" class="flex items-center gap-3.5"><div class="relative flex items-center justify-center"><img alt="Al-Huda Official Seal" class="w-11 h-11 rounded-full object-cover ring-2 ring-accent-gold/40 shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1X_ezCmIxFrGaBLsjMq0Ncg19RRq__d01O29HJQqlx9J1u8VKAnXAwyMerwDYnTHkixpZXc94-KVJd74VOP9VZCRr762dw1PljfnliMxDOsoGKbgxz_gmOPBdwrMG9EDBmFaOK1uZkAjJc1uumxdylt6LF3KQrsdOEAGqZc6Y2uE6dImysJZyvn6hK683e2GkPYPrM9gNvqS9wd4Zr0VQj6yDmI9rm74Xw43uv6aPUvFxT8ZBZsOCDXAkSvU4bdPjgChW4lIYcUMA"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Al-Huda</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Online Quran Institute</span></div></a><nav class="hidden xl:flex items-center gap-6" data-active-classes="text-primary font-bold border-b-2 border-primary"><a aria-current="page" class="transition-colors py-2 text-primary font-bold border-b-2 border-primary" data-path="home" href="index.html">Home</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="about-us" href="about.html">About Us</a><div class="relative group py-2"><a class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" data-path="courses" href="courses.html"><span>Courses</span><span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform duration-200">expand_more</span></a><div class="absolute top-full left-0 hidden group-hover:block w-56 bg-surface-container-lowest rounded-xl shadow-xl border border-border-hairline p-2 z-50"><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="kids-quran" href="courses.html#kids">Kids Foundation</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="tajweed-teens" href="tajweed-ijazah.html">Teens Tajweed Track</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="adult-quran-arabic" href="courses.html#adults">Adults &amp; Sisters Program</a><a class="block px-3 py-2 rounded-lg text-body-sm font-title-sm text-on-surface hover:bg-mint-tint hover:text-primary transition-colors" data-path="hifz-memorization" href="courses.html#hifz">Hifz-ul-Quran Intensive</a></div></div><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="teachers" href="teachers.html">Teachers</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="pricing" href="pricing.html">Pricing</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="safeguarding" href="safeguarding.html">Safeguarding &amp; Safety</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="blog" href="about.html">Blog</a><a class="text-on-surface-variant hover:text-primary transition-colors py-2 font-label-lg text-label-lg" data-path="contact" href="contact.html">Contact Us</a></nav><div class="flex items-center gap-4"><a class="flex items-center gap-2 bg-gradient-to-r from-secondary-container via-accent-gold to-secondary-container text-on-secondary-fixed px-5 py-2.5 rounded-full font-label-lg text-label-lg shadow-sm hover:shadow-md hover:brightness-105 active:scale-95 transition-all" data-path="book-trial" href="#trialBookingForm"><span class="material-symbols-outlined text-[18px] text-secondary">stars</span><span>Book Free Trial Class</span></a><div class="xl:hidden flex items-center"><button aria-label="Toggle Mobile Navigation" class="p-2 text-on-surface hover:text-primary" type="button"><span class="material-symbols-outlined text-[26px]">menu</span></button></div></div></div></header><main class="w-full pt-[116px] bg-canvas-cream"><div class="flex flex-col w-full">
+<!-- Top Subtle Notification & Currency Bar Indicator -->
+<section class="bg-surface-container-low py-2.5 px-6 sm:px-12 text-center text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-2">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Enrollments open for Summer &amp; Term-Time Quran cohorts: UK, US, Canada &amp; Australia time slots available.</span>
+<a class="text-primary font-bold hover:underline ml-1" href="#trial-section">Claim 3 Free Sessions →</a>
+</section>
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden bg-canvas-cream pt-10 pb-20 px-6 lg:px-12">
+<!-- Architectural Subtle Geometry Background Decorator -->
+<div class="absolute inset-0 pointer-events-none opacity-40 flex items-center justify-center">
+<svg class="w-full h-full text-border-hairline" fill="none" stroke="currentColor" stroke-width="0.5" viewbox="0 0 1000 1000">
+<circle cx="500" cy="500" r="450" stroke-dasharray="4 8"></circle>
+<polygon opacity="0.4" points="500,50 950,500 500,950 50,500"></polygon>
+<polygon opacity="0.3" points="500,120 880,500 500,880 120,500"></polygon>
+<circle cx="500" cy="500" r="280"></circle>
+</svg>
+</div>
+<div class="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Hero Column: Value Proposition -->
+<div class="lg:col-span-7 flex flex-col items-start gap-6">
+<!-- Trust badge chip -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-cream text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-accent-gold" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">UK, USA &amp; Canada's Most Trusted Online Quran Academy</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight leading-tight">
+          Master the Holy Quran with <span class="italic text-secondary">Certified Ijazah</span> Scholars from Home
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Personalized 1-on-1 online classes for kids, teens, and adults. Background-checked native Arabic &amp; English-speaking male and female tutors tailored directly to your family's local timezone.
+        </p>
+<!-- CTA Action Group -->
+<div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+<div class="flex flex-col gap-1 w-full sm:w-auto">
+<a class="flex items-center justify-center gap-2 bg-gradient-to-r from-secondary-container via-accent-gold to-secondary-container text-on-secondary-fixed font-title-sm text-title-sm px-8 py-4 rounded-xl shadow-md hover:shadow-xl hover:brightness-105 transition-all text-center" href="#trial-section">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span>Book 3-Day Free Trial Class</span>
+</a>
+<span class="text-center font-label-sm text-label-sm text-on-surface-variant opacity-80">No credit card required • 100% free evaluation</span>
+</div>
+<a class="flex items-center justify-center gap-2 bg-surface-container-lowest text-primary font-title-sm text-title-sm px-6 py-4 rounded-xl shadow-sm hover:bg-surface-container hover:shadow transition-all" href="#courses-catalog">
+<span>Explore Course Catalog</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<a class="flex items-center justify-center gap-2 bg-[#25D366] text-white font-title-sm text-title-sm px-6 py-4 rounded-xl shadow-sm hover:brightness-95 transition-all" href="https://wa.me/923070121348" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>WhatsApp Admissions</span>
+</a>
+</div>
+<!-- Micro-stats trust ribbon -->
+<div class="pt-4 flex flex-wrap items-center gap-6 text-on-surface-variant font-label-lg text-label-lg">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-[20px] text-accent-gold" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>10,000+ Active Students</span>
+</div>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-[20px] text-accent-gold" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>98.6% Parent Satisfaction</span>
+</div>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-[20px] text-accent-gold" style="font-variation-settings: 'FILL' 1;">security</span>
+<span>100% Money-Back Guarantee</span>
+</div>
+</div>
+</div>
+<!-- Right Hero Column: Interactive Live Classroom Card -->
+<div class="lg:col-span-5 relative">
+<!-- Ambient decorative backdrop shadow -->
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary/10 via-secondary/15 to-transparent rounded-3xl blur-2xl -z-10"></div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl p-6 sm:p-8 flex flex-col gap-6 relative">
+<!-- Card Header Bar -->
+<div class="flex items-center justify-between pb-4 bg-surface-container-low -mx-6 -mt-6 p-5 rounded-t-2xl">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Live 1-on-1 Tajweed Session</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-mint-tint text-primary font-label-sm text-label-sm font-semibold">Classroom ID: #ALH-821</span>
+</div>
+<!-- Student & Teacher Metadata -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Student Box -->
+<div class="bg-surface-container p-3.5 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-title-sm shadow">
+                ZM
+              </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Zayd M. (Age 8)</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="text-base leading-none">🇬🇧</span> Birmingham, UK
+                </span>
+</div>
+</div>
+<!-- Teacher Box -->
+<div class="bg-surface-container p-3.5 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-title-sm shadow">
+                UA
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Ustadh Ahmad</span>
+<span class="text-body-sm font-body-sm text-secondary font-semibold truncate">Al-Azhar Certified</span>
+</div>
+</div>
+</div>
+<!-- Classroom Visual Snippet: Surah Al-Mulk Focus -->
+<div class="bg-surface-subtle p-5 rounded-xl flex flex-col gap-4">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-bold text-primary">Surah Al-Mulk • Lesson 4</span>
+<span class="flex items-center gap-1 text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">headset_mic</span> 00:18 / 30:00
+              </span>
+</div>
+<!-- Sacred Arabic Text Recitation Display -->
+<div class="text-center py-3 px-2 bg-surface-container-lowest rounded-lg shadow-sm" dir="rtl">
+<p class="font-headline-md text-headline-md text-on-surface leading-loose">
+                تَبَارَكَ الَّذِي بِيَدِهِ <span class="text-primary font-bold underline decoration-accent-gold decoration-2">الْمُلْكُ</span> وَهُوَ عَلَىٰ كُلِّ شَيْءٍ <span class="text-secondary font-bold">قَدِيرٌ</span>
+</p>
+</div>
+<!-- Tajweed Color Coding Rule Legend -->
+<div class="flex items-center justify-center gap-4 text-[12px] font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="text-on-surface-variant">Idgham</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant">Qalqalah</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-accent-gold"></span>
+<span class="text-on-surface-variant">Ghunnah</span>
+</span>
+</div>
+<!-- Audio Waveform Visualization (SVG) -->
+<div class="bg-surface-container-lowest p-3 rounded-lg flex items-center gap-3">
+<button aria-label="Play Recitation Audio Sample" class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex-1 flex items-center justify-between gap-1 h-6">
+<span class="w-1 bg-primary h-2 rounded-full"></span>
+<span class="w-1 bg-primary h-4 rounded-full"></span>
+<span class="w-1 bg-primary h-6 rounded-full"></span>
+<span class="w-1 bg-primary h-3 rounded-full"></span>
+<span class="w-1 bg-primary h-5 rounded-full"></span>
+<span class="w-1 bg-primary h-2 rounded-full"></span>
+<span class="w-1 bg-accent-gold h-4 rounded-full"></span>
+<span class="w-1 bg-accent-gold h-6 rounded-full"></span>
+<span class="w-1 bg-accent-gold h-5 rounded-full"></span>
+<span class="w-1 bg-primary h-3 rounded-full"></span>
+<span class="w-1 bg-primary h-6 rounded-full"></span>
+<span class="w-1 bg-primary h-2 rounded-full"></span>
+<span class="w-1 bg-primary h-4 rounded-full"></span>
+<span class="w-1 bg-primary h-1 rounded-full"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pronunciation: 98% Correct</span>
+</div>
+</div>
+<!-- Bottom Micro-Tutor Trust Stamp -->
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-1">
+<div class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[18px] text-trust-blue">shield_person</span>
+<span>Enhanced DBS Verified • UK Safe Guarded</span>
+</div>
+<div class="flex items-center gap-1 text-accent-gold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">5.0 (490+ classes)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TRUST BADGE BAR (Prominent Strip) -->
+<section class="bg-surface-container py-8 px-6 lg:px-12 shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-mint-tint flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px] text-trust-blue">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">DBS &amp; Background Checked</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              UK Enhanced DBS &amp; North American verified tutors ensuring utmost child security.
+            </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-amber-cream flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px] text-accent-gold">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Verified Ijazah Sanad</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Direct chains of transmission in Hafs and Warsh from Al-Azhar &amp; Madinah scholars.
+            </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-mint-tint flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px] text-primary">group</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">1-on-1 Female &amp; Male Tutors</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Certified female Alimahs available for sisters, daughters, and early-childhood learners.
+            </p>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px] text-secondary">update</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Flexible Multi-Timezone</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Seamless 24/7 availability scheduled to GMT, BST, EST, CST, PST, and AEDT timezones.
+            </p>
+</div>
+</div>
+</div>
+<!-- Trust Ratings Aggregator Strip -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="flex items-center text-accent-gold">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">4.9 / 5.0 Rating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">from 1,420+ verified diaspora reviews across Trustpilot and Google Reviews.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-body-sm font-body-sm font-bold text-trust-blue">Verified Independent Reviews</span>
+<span class="material-symbols-outlined text-[18px] text-trust-blue">check_circle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE AL-HUDA: 6 PILLAR CARDS -->
+<section class="py-24 px-6 lg:px-12 bg-canvas-cream">
+<div class="max-w-7xl mx-auto flex flex-col gap-12">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto flex flex-col gap-3">
+<span class="font-label-sm text-label-sm font-bold tracking-widest text-secondary uppercase">
+          Sacred Pedagogy • Western Standards
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          Why Families in the UK, USA &amp; Canada Trust Al-Huda
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          We bridge traditional Quranic scholarship with modern, compassionate e-learning. Every child receives individual nurturing, measured milestones, and absolute safety.
+        </p>
+</div>
+<!-- 6 Pillar Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-mint-tint flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px] text-trust-blue">security</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Safe &amp; Safeguarded Classrooms</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Strict child protection protocol, recorded sessions for parental review, and dedicated portal access. Parents can observe lessons at any time.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span>Learn about our DBS Protocols</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-amber-cream flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px] text-accent-gold">school</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Accredited Ijazah Tutors</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Every instructor is an accredited graduate of world-renowned institutions, such as Al-Azhar University or the Islamic University of Madinah, with verified Sanad.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span>View Faculty Credentials</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-mint-tint flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px] text-primary">auto_stories</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Tailored 1-on-1 Curriculum</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Customized learning plan adapted to your student's exact pace. From zero-experience Noorani Qaida phonetics to advanced Hafiz memorization and Tajweed theory.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span>Explore Individual Roadmaps</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px] text-secondary">face_3</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Male &amp; Female Qualified Teachers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Respecting your family's cultural and Islamic comfort, we offer certified female teachers with high pedagogical qualifications for sisters and young children.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span>Browse Female Faculty</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-mint-tint flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px] text-primary">event_available</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Flexible Scheduling &amp; Rescheduling</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Life happens. Easily reschedule any lesson with just 2 hours advance notice through your online portal or direct WhatsApp academic supervisor.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span>See Timetable Flexibility</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-amber-cream flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px] text-accent-gold">payments</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary">Multi-Currency &amp; Affordable Fees</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Transparent institutional pricing starting at just £35 / $45 / C$55 per month. 10% to 15% discounts for multi-sibling families.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span>View Sibling Discount Tiers</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED COURSES CATALOG PREVIEW -->
+<section class="py-24 px-6 lg:px-12 bg-surface-container-low" id="courses-catalog">
+<div class="max-w-7xl mx-auto flex flex-col gap-12">
+<!-- Section Header with Audience Filter Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-2 max-w-xl">
+<span class="font-label-sm text-label-sm font-bold tracking-widest text-secondary uppercase">
+            Curriculum Roadmaps
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            Curated Quranic &amp; Islamic Programs
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Graduated stages tailored to age, familiarity with the Arabic script, and personal memorization goals.
+          </p>
+</div>
+<!-- Audience Filter Buttons -->
+<div class="flex items-center flex-wrap gap-2 bg-surface-container p-1.5 rounded-xl" id="course-filter-group">
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm" onclick="filterCourses('all', this)">All Ages</button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary font-medium transition-colors" onclick="filterCourses('kids', this)">Kids (Ages 4–12)</button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary font-medium transition-colors" onclick="filterCourses('teens', this)">Teens (Ages 13–17)</button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary font-medium transition-colors" onclick="filterCourses('adults', this)">Adults &amp; Sisters</button>
+</div>
+</div>
+<!-- 4 Premium Course Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Course 1 -->
+<div class="course-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="kids">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-mint-tint text-primary font-label-sm text-label-sm font-bold">Ages 4-9 • Beginner</span>
+<span class="material-symbols-outlined text-[22px] text-accent-gold">menu_book</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Noorani Qaida for Beginners</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Foundational Arabic alphabet phonetics, Makharij points of articulation, and connecting letter shapes with interactive digital flashcards.
+              </p>
+</div>
+<div class="bg-surface-subtle p-3 rounded-xl flex flex-col gap-1 text-body-sm font-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Duration:</span>
+<span class="font-bold text-on-surface">2-3 Months</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Lesson Length:</span>
+<span class="font-bold text-on-surface">30 min / 1-on-1</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 pt-6 mt-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">From:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">£38 / $49</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ month</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full text-center py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-colors shadow" href="#trial-section">
+                Book Free Trial
+              </a>
+<a class="w-full text-center py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="https://wa.me/923070121348?text=Hello%20Al-Huda,%20I%20would%20like%20to%20see%20the%20Noorani%20Qaida%20syllabus" rel="noopener noreferrer" target="_blank">
+                View Syllabus
+              </a>
+</div>
+</div>
+</div>
+<!-- Course 2 -->
+<div class="course-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="teens adults">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-amber-cream text-secondary font-label-sm text-label-sm font-bold">All Ages • Intermediate</span>
+<span class="material-symbols-outlined text-[22px] text-accent-gold">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Quran Reading with Tajweed</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Rules of Noon Sakinah, Meem Sakinah, Madd, correct articulation, breath control, and melodious, reverent recitation practice.
+              </p>
+</div>
+<div class="bg-surface-subtle p-3 rounded-xl flex flex-col gap-1 text-body-sm font-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Duration:</span>
+<span class="font-bold text-on-surface">6 Months</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Lesson Length:</span>
+<span class="font-bold text-on-surface">30 or 45 min</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 pt-6 mt-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">From:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">£44 / $58</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ month</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full text-center py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-colors shadow" href="#trial-section">
+                Book Free Trial
+              </a>
+<a class="w-full text-center py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="https://wa.me/923070121348?text=Hello%20Al-Huda,%20I%20would%20like%20to%20see%20the%20Tajweed%20syllabus" rel="noopener noreferrer" target="_blank">
+                View Syllabus
+              </a>
+</div>
+</div>
+</div>
+<!-- Course 3 -->
+<div class="course-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="teens kids">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-mint-tint text-primary font-label-sm text-label-sm font-bold">Comprehensive • All Levels</span>
+<span class="material-symbols-outlined text-[22px] text-primary">auto_stories</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Hifz-ul-Quran (Memorization)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                A structured daily Sabqi, Sabq, and Manzil system with Ijazah-certified Hafiz tutors. Customized pacing for full Quran or selected Surahs.
+              </p>
+</div>
+<div class="bg-surface-subtle p-3 rounded-xl flex flex-col gap-1 text-body-sm font-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Duration:</span>
+<span class="font-bold text-on-surface">2-3 Years Track</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Lesson Length:</span>
+<span class="font-bold text-on-surface">45-60 min Daily</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 pt-6 mt-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">From:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">£55 / $70</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ month</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full text-center py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-colors shadow" href="#trial-section">
+                Book Free Trial
+              </a>
+<a class="w-full text-center py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="https://wa.me/923070121348?text=Hello%20Al-Huda,%20I%20would%20like%20to%20see%20the%20Hifz%20syllabus" rel="noopener noreferrer" target="_blank">
+                View Syllabus
+              </a>
+</div>
+</div>
+</div>
+<!-- Course 4 -->
+<div class="course-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="kids teens">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-amber-cream text-secondary font-label-sm text-label-sm font-bold">Kids &amp; Teens • Foundation</span>
+<span class="material-symbols-outlined text-[22px] text-accent-gold">favorite</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Islamic Studies &amp; Daily Adab</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Essential Fiqh of Taharah &amp; Salah, inspirational Seerah of Prophet Muhammad (PBUH), daily Masnoon Duas, and Islamic character values.
+              </p>
+</div>
+<div class="bg-surface-subtle p-3 rounded-xl flex flex-col gap-1 text-body-sm font-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Duration:</span>
+<span class="font-bold text-on-surface">Ongoing Modular</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Lesson Length:</span>
+<span class="font-bold text-on-surface">30 min / 1-on-1</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 pt-6 mt-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">From:</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">£35 / $45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ month</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="w-full text-center py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-colors shadow" href="#trial-section">
+                Book Free Trial
+              </a>
+<a class="w-full text-center py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="https://wa.me/923070121348?text=Hello%20Al-Huda,%20I%20would%20like%20to%20see%20the%20Islamic%20Studies%20syllabus" rel="noopener noreferrer" target="_blank">
+                View Syllabus
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS: 4-STEP STUDENT JOURNEY -->
+<section class="py-24 px-6 lg:px-12 bg-canvas-cream">
+<div class="max-w-7xl mx-auto flex flex-col gap-16">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-3">
+<span class="font-label-sm text-label-sm font-bold tracking-widest text-secondary uppercase">
+          Effortless Onboarding
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          How Your Journey Begins at Al-Huda
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Experience our world-class pedagogy in four simple steps without any upfront commitment or credit card.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col gap-4 relative">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-title-md">
+            01
           </div>
-          <div class="stat-item">
-            <h3>50+</h3>
-            <p>Certified Tutors</p>
+<h3 class="font-title-md text-title-md text-primary">Submit Free Trial Request</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Fill out our quick 60-second form specifying your timezone, preferred days, and target learning track.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 60 seconds online
           </div>
-          <div class="stat-item">
-            <h3>99%</h3>
-            <p>Satisfaction Rate</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col gap-4 relative">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-title-md">
+            02
           </div>
-        </div>
-      </div>
-      <div class="hero-image-card">
-        <div class="arabic-calligraphy">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-        <div class="verse-box">
-          <p class="verse-arabic">"خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ"</p>
-          <p class="verse-translation">"The best among you are those who learn the Quran and teach it." (Sahih Al-Bukhari)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>About Quran Academy</h2>
-        <p>Dedicated to providing authentic, accessible, and comprehensive Quranic education worldwide.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="icon-box">📖</div>
-          <h3>Interactive 1-on-1 Live Sessions</h3>
-          <p>Personalized attention with tailored learning speed for students of all age groups and skill levels.</p>
-        </div>
-        <div class="about-card">
-          <div class="icon-box">🎓</div>
-          <h3>Al-Azhar Certified Tutors</h3>
-          <p>Learn from qualified male and female teachers with Ijazah from renowned Islamic Universities.</p>
-        </div>
-        <div class="about-card">
-          <div class="icon-box">🕒</div>
-          <h3>Flexible Schedules 24/7</h3>
-          <p>Choose your preferred timings that fit perfectly into your busy school or work routine.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Courses Section -->
-  <section class="courses" id="courses">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Our Popular Courses</h2>
-        <p>Structured programs designed for beginners, intermediate, and advanced learners.</p>
-      </div>
-      <div class="courses-grid" id="coursesGrid">
-        <!-- Dynamically loaded or fallback static course cards -->
-        <div class="course-card">
-          <div class="course-badge">Beginner</div>
-          <h3>Noorani Qaida & Basic Quran</h3>
-          <p>Learn Arabic alphabets, correct pronunciation, and basic reading rules for kids and adult beginners.</p>
-          <button class="btn btn-primary btn-sm enroll-btn" data-course="Noorani Qaida & Basic Quran">Enroll Now</button>
-        </div>
-        <div class="course-card">
-          <div class="course-badge">All Levels</div>
-          <h3>Quran Recitation with Tajweed</h3>
-          <p>Master Tajweed rules to recite the Quran with accuracy, beautiful melody, and proper rhythm.</p>
-          <button class="btn btn-primary btn-sm enroll-btn" data-course="Quran Recitation with Tajweed">Enroll Now</button>
-        </div>
-        <div class="course-card">
-          <div class="course-badge">Intermediate</div>
-          <h3>Quran Memorization (Hifz)</h3>
-          <p>Systematic Quran memorization program with daily revision techniques guided by experienced Hafiz tutors.</p>
-          <button class="btn btn-primary btn-sm enroll-btn" data-course="Quran Memorization (Hifz)">Enroll Now</button>
-        </div>
-        <div class="course-card">
-          <div class="course-badge">Advanced</div>
-          <h3>Islamic Studies & Quranic Arabic</h3>
-          <p>Understand Quranic grammar, Tafseer, Hadith, Fiqh, and daily Dua'as to enrich your spiritual life.</p>
-          <button class="btn btn-primary btn-sm enroll-btn" data-course="Islamic Studies & Quranic Arabic">Enroll Now</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Why Choose Quran Academy?</h2>
-        <p>We provide an ideal online learning environment for your family.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-item">
-          <div class="feature-icon">👩‍🏫</div>
-          <h4>Female Tutors Available</h4>
-          <p>Dedicated male and female instructors available for sisters and female students.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">📊</div>
-          <h4>Monthly Progress Reports</h4>
-          <p>Parents receive detailed monthly feedback on performance, attendance, and fluency.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">💰</div>
-          <h4>Affordable Monthly Packages</h4>
-          <p>High quality education with flexible subscription options and family discounts.</p>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">🎁</div>
-          <h4>Free 3-Day Trial</h4>
-          <p>Experience our teaching methodology with no commitment before enrolling.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <h2>Get in Touch with Us</h2>
-          <p>Have questions or want to register for a <strong>Free Trial Class</strong>? Fill out the form and our team will get back to you within 24 hours.</p>
-          <div class="info-details">
-            <p><strong>📧 Email:</strong> support@quranacademy.com</p>
-            <p><strong>📞 Phone / WhatsApp:</strong> +1 (800) 123-4567</p>
-            <p><strong>🌐 Working Hours:</strong> 24/7 Available Worldwide</p>
+<h3 class="font-title-md text-title-md text-primary">Take 1-on-1 Assessment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Meet your dedicated tutor online. We evaluate current Arabic reading level, Tajweed grasp, or Qaida readiness.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">fact_check</span> Diagnostic report
           </div>
-          <div class="sheets-badge">
-            ⚡ Powered by Instant Google Sheets Data Synchronization
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col gap-4 relative">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-title-md">
+            03
           </div>
-        </div>
-
-        <div class="contact-form-container">
-          <form id="contactForm" class="contact-form">
-            <h3>Register for Free Trial</h3>
-            <div id="formAlert" class="alert hidden"></div>
-
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+<h3 class="font-title-md text-title-md text-primary">Personalize Your Schedule</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Choose your weekly lesson frequency (2, 3, or 5 days/week), duration (30/45 min), and male or female teacher.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">tune</span> Custom tailored
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col gap-4 relative">
+<div class="w-12 h-12 rounded-full bg-accent-gold text-on-secondary flex items-center justify-center font-bold text-title-md">
+            04
+          </div>
+<h3 class="font-title-md text-title-md text-primary">Begin Sacred Journey</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Log in to the parent-monitored student portal. Receive weekly audio feedback, revision notes, and certificates.
+          </p>
+<div class="mt-auto pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span> Measured progress
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS (WITH WESTERN FLAGS & VERIFIED BADGES) -->
+<section class="py-24 px-6 lg:px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-2 max-w-xl">
+<span class="font-label-sm text-label-sm font-bold tracking-widest text-secondary uppercase">
+            Parent &amp; Student Endorsements
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            Trusted by Muslim Families Worldwide
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Read verified reviews from parents navigating school schedules, Western timezones, and seeking authentic scholarship.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<div class="px-4 py-2 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-2">
+<span class="font-bold text-primary text-title-sm">1,420+</span>
+<span class="text-body-sm text-on-surface-variant">Five-Star Verified Reviews</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex text-accent-gold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-xl leading-none" title="United Kingdom">🇬🇧</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “Finding a female Ijazah teacher who connects so effortlessly with my 7-year-old daughter in London was difficult until we found Al-Huda. The safeguarding standards and weekly audio feedback give me complete peace of mind.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-mint-tint flex items-center justify-center font-bold text-primary">
+              FK
             </div>
-
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Mrs. Farhana Khan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">London, United Kingdom</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex text-accent-gold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-xl leading-none" title="United States">🇺🈀</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “The scheduling flexibility for our US Central timezone is unmatched. My two boys completed Noorani Qaida and are now reciting Juz Amma with proper Tajweed. The instructors are patient, polite, and punctual.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-amber-cream flex items-center justify-center font-bold text-secondary">
+              TB
             </div>
-
-            <div class="form-group">
-              <label for="phone">Phone / WhatsApp *</label>
-              <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Brother Tariq &amp; Family</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dallas, Texas, USA</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex text-accent-gold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-xl leading-none" title="Canada">🇨🇦</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “As an adult physician with a demanding schedule, the 1-on-1 evening classes helped me correct my recitation rules and start memorizing Surah Al-Kahf. Academic rigor and spiritual sincerity in equal measure.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-mint-tint flex items-center justify-center font-bold text-primary">
+              SM
             </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary">Dr. Samira Al-Mansoor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Toronto, Canada</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LIVE IMPACT COUNTER & CERTIFICATION BANNER -->
+<section class="py-16 px-6 lg:px-12 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto flex flex-col gap-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<!-- Stat 1 -->
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-secondary-fixed font-bold tracking-tight">10,000+</span>
+<span class="font-title-sm text-title-sm opacity-90 mt-1">Students Taught</span>
+<span class="font-body-sm text-body-sm opacity-70">Across 28+ Countries</span>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-secondary-fixed font-bold tracking-tight">150+</span>
+<span class="font-title-sm text-title-sm opacity-90 mt-1">Certified Tutors</span>
+<span class="font-body-sm text-body-sm opacity-70">Al-Azhar &amp; Madinah Ijazah</span>
+</div>
+<!-- Stat 3 -->
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-secondary-fixed font-bold tracking-tight">28+</span>
+<span class="font-title-sm text-title-sm opacity-90 mt-1">Countries Served</span>
+<span class="font-body-sm text-body-sm opacity-70">UK, US, Canada, Australia</span>
+</div>
+<!-- Stat 4 -->
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-secondary-fixed font-bold tracking-tight">99.4%</span>
+<span class="font-title-sm text-title-sm opacity-90 mt-1">Course Completion</span>
+<span class="font-body-sm text-body-sm opacity-70">Proven retention method</span>
+</div>
+</div>
+<!-- Direct Official Contact Advisory Strip -->
+<div class="pt-6 bg-primary-container/40 p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[32px] text-secondary-fixed">headset_mic</span>
+<div>
+<span class="font-title-md text-title-md font-bold">Have questions or specific timing requests?</span>
+<p class="font-body-sm text-body-sm opacity-85">Speak directly with our Academic Director for curriculum advice and placement assistance.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<a class="px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold shadow hover:bg-surface-container transition-colors" href="tel:+923070121348">
+            Call +92 307 0121348
+          </a>
+<a class="px-4 py-2.5 rounded-lg bg-[#25D366] text-white font-label-lg text-label-lg font-bold shadow hover:brightness-105 transition-all" href="https://wa.me/923070121348" rel="noopener noreferrer" target="_blank">
+            WhatsApp Anytime
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- PROMINENT TRIAL BANNER / RESERVATION FORM -->
+<section class="py-24 px-6 lg:px-12 bg-canvas-cream" id="trial-section">
+<div class="max-w-5xl mx-auto bg-surface-container-lowest rounded-3xl shadow-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Form Left Details Panel -->
+<div class="lg:col-span-5 bg-gradient-to-br from-primary via-primary-container to-tertiary p-8 lg:p-10 text-on-primary flex flex-col justify-between gap-8">
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary-fixed font-bold">
+              3-Day Evaluation Period
+            </span>
+<h3 class="font-display-md text-display-md text-on-primary leading-tight">
+              Start Your Family's Sacred Journey
+            </h3>
+<p class="font-body-md text-body-md opacity-90 leading-relaxed">
+              Experience 3 complete private one-on-one sessions with our certified scholars. No payment information required.
+            </p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 text-label-lg font-label-lg">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span>Zero Financial Risk</span>
+</div>
+<div class="flex items-center gap-2 text-label-lg font-label-lg">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span>Cancel Anytime with 1 Click</span>
+</div>
+<div class="flex items-center gap-2 text-label-lg font-label-lg">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span>Choose Male or Female Tutor</span>
+</div>
+</div>
+<div class="pt-4 text-label-sm font-label-sm opacity-75">
+            Admissions Desk: alhudaquranacademy1348@gmail.com
+          </div>
+</div>
+<!-- Form Right Interactive Booking Controls -->
+<div class="lg:col-span-7 p-8 lg:p-10 flex flex-col gap-6">
+<div class="flex flex-col gap-1">
+<h4 class="font-title-lg text-title-lg text-primary">Book 3 Free Trial Classes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Complete this form and an advisor will confirm your trial slot via WhatsApp within 2 hours.</p>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="trialBookingForm" onsubmit="handleTrialSubmit(event)">
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="trial_name">Parent / Student Full Name</label>
+<input class="h-12 px-4 rounded-xl bg-surface-subtle text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md" id="trial_name" placeholder="e.g. Tariq Mansoor" required="" type="text"/>
+</div>
+<!-- WhatsApp Number with Country Code -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="trial_phone">WhatsApp Number (with Country Code)</label>
+<input class="h-12 px-4 rounded-xl bg-surface-subtle text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md" id="trial_phone" placeholder="+44 7911 123456" required="" type="tel"/>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="trial_email">Email Address</label>
+<input class="h-12 px-4 rounded-xl bg-surface-subtle text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md" id="trial_email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<!-- Course Interest -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="trial_course">Select Course</label>
+<select class="h-12 px-4 rounded-xl bg-surface-subtle text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md cursor-pointer" id="trial_course">
+<option value="Noorani Qaida for Kids">Noorani Qaida for Beginners</option>
+<option value="Quran Reading with Tajweed">Quran Reading with Tajweed</option>
+<option value="Hifz-ul-Quran Intensive">Hifz-ul-Quran (Memorization)</option>
+<option value="Islamic Studies &amp; Duas">Islamic Studies &amp; Duas</option>
+<option value="Adult Sisters Program">Adult Sisters Quran &amp; Arabic</option>
+</select>
+</div>
+<!-- Tutor Preference -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="trial_tutor_pref">Tutor Preference</label>
+<select class="h-12 px-4 rounded-xl bg-surface-subtle text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md cursor-pointer" id="trial_tutor_pref">
+<option value="Female Tutor">Female Tutor (Alimah)</option>
+<option value="Male Tutor">Male Tutor (Qari / Hafiz)</option>
+<option value="No Preference">Either (First Available Slot)</option>
+</select>
+</div>
+<!-- Timezone Selection -->
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="trial_timezone">Your Local Timezone</label>
+<select class="h-12 px-4 rounded-xl bg-surface-subtle text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-md text-body-md cursor-pointer" id="trial_timezone">
+<option value="UK - GMT / BST (London)">United Kingdom • GMT / BST (London, Birmingham, Manchester)</option>
+<option value="US - EST (New York, Florida, Toronto)">North America • Eastern Time EST (New York, Toronto)</option>
+<option value="US - CST (Texas, Chicago)">North America • Central Time CST (Texas, Chicago)</option>
+<option value="US - PST (California, Vancouver)">North America • Pacific Time PST (California, Vancouver)</option>
+<option value="Australia - AEDT / AEST (Sydney, Melbourne)">Australia • Sydney / Melbourne Time</option>
+<option value="Other">Other International Timezone</option>
+</select>
+</div>
+<!-- Submit Button -->
+<div class="sm:col-span-2 pt-2 flex flex-col gap-3">
+<button class="w-full py-4 rounded-xl bg-gradient-to-r from-secondary-container via-accent-gold to-secondary-container text-on-secondary-fixed font-title-sm text-title-sm font-bold shadow-md hover:brightness-105 active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>Confirm &amp; Reserve 3 Free Trial Classes</span>
+</button>
+<div class="hidden p-3 rounded-lg bg-mint-tint text-primary text-center font-title-sm text-title-sm" id="trialFormSuccess">
+                BarakAllah Feek! Your trial request has been reserved. Our admissions desk will WhatsApp you momentarily to confirm lesson timing.
+              </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Filtering & Form Handling Inline Script -->
+<script>
+    function filterCourses(category, btnElement) {
+      // Update active tab buttons
+      const buttons = document.querySelectorAll('#course-filter-group button');
+      buttons.forEach(btn => {
+        btn.className = 'px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary font-medium transition-colors';
+      });
+      btnElement.className = 'px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm';
 
-            <div class="form-group">
-              <label for="course">Select Course *</label>
-              <select id="course" name="course" required>
-                <option value="">-- Choose Course --</option>
-                <option value="Noorani Qaida & Basic Quran">Noorani Qaida & Basic Quran</option>
-                <option value="Quran Recitation with Tajweed">Quran Recitation with Tajweed</option>
-                <option value="Quran Memorization (Hifz)">Quran Memorization (Hifz)</option>
-                <option value="Islamic Studies & Quranic Arabic">Islamic Studies & Quranic Arabic</option>
-              </select>
-            </div>
+      // Filter course cards
+      const cards = document.querySelectorAll('.course-card');
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.style.display = 'flex';
+        } else {
+          const cats = card.getAttribute('data-category') || '';
+          if (cats.includes(category)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
+    }
 
-            <div class="form-group">
-              <label for="message">Message / Preferred Timings</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about student age or preferred timings..."></textarea>
-            </div>
+    function handleTrialSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('trial_name').value;
+      const phone = document.getElementById('trial_phone').value;
+      const course = document.getElementById('trial_course').value;
+      const tutor = document.getElementById('trial_tutor_pref').value;
+      const tz = document.getElementById('trial_timezone').value;
 
-            <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
-              <span class="btn-text">Submit Request</span>
-              <span class="spinner hidden"></span>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+      // Show instant visual confirmation
+      const successDiv = document.getElementById('trialFormSuccess');
+      if (successDiv) {
+        successDiv.classList.remove('hidden');
+      }
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Quran Academy. All rights reserved. Designed & Powered with Express Backend & Google Sheets.</p>
-    </div>
-  </footer>
-
-  <!-- JS script -->
-  <script src="js/main.js"></script>
-</body>
-</html>
+      // Pre-compose WhatsApp redirection optionally for instant assistance
+      const message = encodeURIComponent(`Assalamu Alaikum Al-Huda Institute! I would like to book a 3-Day Free Trial.%0A%0AName: ${name}%0APhone: ${phone}%0ACourse: ${course}%0ATutor: ${tutor}%0ATimezone: ${tz}`);
+      setTimeout(() => {
+        window.open(`https://wa.me/923070121348?text=${message}`, '_blank');
+      }, 900);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-border-hairline"><div class="bg-mint-tint/60 border-b border-border-hairline py-4 px-6"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-around gap-4 text-center"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-trust-blue">verified_user</span><span class="font-label-sm text-label-sm tracking-wide uppercase">UK DBS / Enhanced Background Checked Tutors</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-accent-gold">workspace_premium</span><span class="font-label-sm text-label-sm tracking-wide uppercase">Verified Al-Azhar &amp; Medina Ijazah</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-primary-container">security</span><span class="font-label-sm text-label-sm tracking-wide uppercase">100% Satisfaction or Money-Back Guarantee</span></div><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px] text-primary">lock</span><span class="font-label-sm text-label-sm tracking-wide uppercase">GDPR Compliant &amp; SSL 256-Bit Encrypted</span></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-16"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"><div class="space-y-4"><div class="flex items-center gap-3"><img alt="Al-Huda Logo" class="w-10 h-10 rounded-full object-cover ring-1 ring-border-gilded" src="https://lh3.googleusercontent.com/aida/AEtjO1X_ezCmIxFrGaBLsjMq0Ncg19RRq__d01O29HJQqlx9J1u8VKAnXAwyMerwDYnTHkixpZXc94-KVJd74VOP9VZCRr762dw1PljfnliMxDOsoGKbgxz_gmOPBdwrMG9EDBmFaOK1uZkAjJc1uumxdylt6LF3KQrsdOEAGqZc6Y2uE6dImysJZyvn6hK683e2GkPYPrM9gNvqS9wd4Zr0VQj6yDmI9rm74Xw43uv6aPUvFxT8ZBZsOCDXAkSvU4bdPjgChW4lIYcUMA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary">Al-Huda</span><span class="font-label-sm text-label-sm text-secondary">Global Quran Institute</span></div></div><p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">An internationally accredited sacred learning institution delivering world-class 1-on-1 Quranic recitation, authentic Tajweed, and Classical Arabic education to Muslim families across the United Kingdom, North America, and globally.</p><div class="flex items-center gap-2 pt-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-cream border border-border-gilded rounded-full text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[15px]">stars</span>Accredited Global Curriculum</span></div></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Institutional Links</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="about-us" href="about.html">About Al-Huda Academy</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="safeguarding" href="safeguarding.html">DBS Safeguarding &amp; Child Safety Policy</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="teachers" href="teachers.html">Faculty &amp; Ijazah Verification</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="faqs" href="pricing.html#faq">Frequently Asked Questions</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="free-assessment" href="pricing.html">1-on-1 Free Evaluation</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">arrow_forward</span><a data-path="blog" href="about.html">Tajweed Guides &amp; Parent Resources</a></li></ul></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Certified Programs</h4><ul class="space-y-2.5 font-body-sm text-body-sm"><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Noorani Qaida for Kids &amp; Beginners</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Quran Reading with Theoretical Tajweed</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Hifz-ul-Quran (Full &amp; Selected Surahs)</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Islamic Studies, Fiqh &amp; Duas for Youth</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Spoken Arabic &amp; Classical Quranic Arabic</a></li><li class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px] text-accent-gold">menu_book</span><a data-path="courses" href="courses.html">Female Tutors for Sisters &amp; Toddlers</a></li></ul></div><div class="space-y-4"><h4 class="font-title-md text-title-md text-primary font-bold border-b border-border-hairline pb-2">Direct Advisory &amp; Support</h4><p class="text-body-sm font-body-sm text-on-surface-variant">Our admissions counselors and pedagogical supervisors are available 24/7 across UK, US, and CA timezones.</p><div class="space-y-3 font-body-sm text-body-sm"><a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="https://wa.me/923070121348"><span class="material-symbols-outlined text-[20px] text-primary">chat</span><div><div class="font-title-sm text-title-sm text-on-surface">WhatsApp &amp; Direct Phone</div><div class="text-on-surface-variant">+92 307 0121348</div></div></a><a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="mailto:alhudaquranacademy1348@gmail.com"><span class="material-symbols-outlined text-[20px] text-primary">alternate_email</span><div><div class="font-title-sm text-title-sm text-on-surface">Admissions Desk</div><div class="text-on-surface-variant">alhudaquranacademy1348@gmail.com</div></div></a><div class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-[20px] text-trust-blue">support_agent</span><div><div class="font-title-sm text-title-sm text-on-surface">Global Academic Support</div><div class="text-on-surface-variant">24 Hours / 7 Days a Week</div></div></div></div></div></div><div class="mt-12 pt-6 border-t border-border-hairline flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-3"><span class="font-label-sm text-label-sm text-on-surface-variant">Secure Global Payments Accepted:</span><div class="flex items-center gap-2 text-on-surface-variant"><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">VISA</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Mastercard</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Stripe</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">PayPal</span><span class="inline-block px-2.5 py-1 rounded bg-surface-container text-body-sm font-bold">Direct Debit</span></div></div><div class="flex items-center gap-4 text-on-surface-variant text-label-sm font-label-sm"><a class="hover:text-primary" data-path="privacy-policy" href="#">Privacy Policy</a><span>•</span><a class="hover:text-primary" data-path="terms-of-service" href="#">Terms of Service</a><span>•</span><a class="hover:text-primary" data-path="child-protection" href="safeguarding.html">Child Protection Policy</a></div></div><div class="mt-6 text-center text-on-surface-variant font-label-sm text-label-sm">© 2026 Al-Huda Online Quran Institute. All Rights Reserved. Dedicated to excellence in sacred Quranic education worldwide.</div></div></footer><a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all" href="https://wa.me/923070121348" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[24px]">chat</span><span class="font-label-lg text-label-lg pr-1 font-bold">WhatsApp Us</span></a>  <script src="js/main.js"></script>
+</body></html>
